@@ -1,0 +1,433 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+nav {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.nav-header {
+    background-image: url("https://cf.bstatic.com/images/hotel/max1280x900/231/231136762.jpg");
+    height: 800px;
+    width: 100%;
+    position: relative;
+    z-index: 99;
+    transition: background-image 1s linear;
+}
+
+.nav-header .menu-logo {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 64px;
+    background-color: transparent;
+    transition: 1s;
+}
+
+.nav-header .menu-logo .logo {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.nav-header .menu-logo .menu {
+    text-align: center;
+}
+
+.nav-header .menu-logo .menu ul {
+    margin-left: 30px;
+}
+
+.nav-header .menu-logo .menu ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 20px 25px 20px 25px;
+}
+
+.nav-header .menu-logo .menu ul li a {
+    text-decoration: none;
+    padding-left: 3px;
+    padding-right: 3px;
+    color: white;
+    font-weight: 500;
+}
+
+.menu ul li a {
+    position: relative;
+}
+
+.nav-header .menu-logo .menu ul li a:after {
+    position: absolute;
+    top: 25px;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    content: '';
+    transition: all ease .3s;
+    opacity: 0;
+    background: white;
+}
+
+.nav-header .menu-logo .menu ul li a:hover:after {
+    opacity: 1;
+    transition: 1s;
+    width: 100%;
+}
+
+.nav-header .menu-logo .menu ul li a:hover {
+    color: white;
+}
+
+.nav-header-overlay {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+    background: #111;
+}
+
+.intro-header {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+    padding-top: 250px;
+    color: white;
+}
+
+.intro-header .big-content {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 80px
+}
+
+.intro-header .small-content {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.intro-header .style-button-ct {
+    margin-top: 20px;
+    border-radius: 25px;
+    height: 47px;
+    width: 230px;
+    font-weight: 600;
+}
+
+.intro-header .style-button-ct a {
+    text-decoration: none;
+    color: black;
+}
+
+.intro-header .style-button-ct:hover {
+    background-color: transparent;
+    border: white solid 1px;
+    transition: 0.5s;
+}
+
+.introduce-myself {
+    text-align: center;
+    padding-top: 50px;
+
+}
+
+.introduce-myself p {
+    font-size: 20px;
+}
+
+.introduce-myself h2 {
+    font-size: 40px;
+}
+
+.avatar-introduce {
+    display: flex;
+    padding-top: 70px;
+}
+
+.avatar {
+    padding-left: 120px;
+}
+
+.introduce {
+    padding-top: 40px;
+    font-size: 19px;
+    font-family: Calibri;
+}
+
+.profile-skills {
+    display: flex;
+    padding-top: 110px;
+    padding-left: 120px;
+}
+
+.type-index-bold-profile {
+    font-weight: bold;
+    font-family: Bahnschrift;
+}
+
+.update-case {
+    font-size: 15px;
+}
+
+.col-skills {
+    padding-top: 20px;
+}
+
+.content {
+    margin-top: 100px;
+    position: relative;
+}
+
+.content > div {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.content .content_while {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: sans-serif
+}
+
+.content .thumbnail {
+    width: 100%;
+    height: 700px;
+    background-image: url("https://res.cloudinary.com/thanhdeptrai/image/upload/v1595400282/background-image-1_xnbqgc.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 75px;
+    position: absolute;
+    transition: 2s;
+    left: 40px;
+    z-index: 1;
+}
+
+.content .description {
+    width: 100%;
+    height: 700px;
+    background-color: white;
+    position: absolute;
+    left: 560px;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 51px -17px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 51px -17px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 51px -17px rgba(0, 0, 0, 0.75);
+
+}
+
+.content .description > div {
+    text-align: left !important;
+    margin-left: 80px;
+    margin-top: 40px;
+    width: 400px;
+    font-family: sans-serif;
+}
+
+.content .description > div > h4 {
+    font-size: 25px;
+    font-weight: revert;
+}
+
+.content .description > div p {
+    font-size: 13px;
+}
+
+.content .description > div > button {
+    border-radius: 20px;
+    float: right;
+}
+
+.content .description > div > button > a {
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-between {
+    background-image: url("http://sungroupdiatrunghai.net/wp-content/uploads/2018/02/biet-thu-bien-sun-phu-quoc-1-1.jpg");
+    height: 300px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.nav-between-overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    background: #111;
+
+}
+
+.work-with-me {
+    display: block;
+}
+
+.p-between {
+    color: white;
+    font-size: 35px;
+    font-family: Bahnschrift;
+    padding-top: 100px;
+}
+
+.btn {
+    border-radius: 10px;
+}
+
+.style-icon {
+    font-size: 20px;
+    color: white;
+    margin-left: 10px;
+}
+
+.click-me {
+    width: 130px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.click-me:hover {
+    background-color: transparent;
+    color: white !important;
+}
+
+.slick_slider {
+    display: flex !important;
+}
+
+.slick_slider .item {
+    width: 80px;
+    height: 80px;
+    margin-left: 15px;
+}
+
+.slick_slider .item img {
+    width: 80px;
+    height: 80px;
+    transition: all linear .4s;
+}
+
+.slick_slider .slick-center img {
+    transform: scale(1.2);
+}
+
+.slick-next:before, .slick-prev:before {
+    color: #007bff !important;
+}
+
+.box-hotel {
+    width: 100%;
+    height: 300px;
+    border: solid #c6c6c6 1px;
+    border-radius: 5px;
+    float: left;
+}
+
+.box-hotel:hover {
+    background: #e0f2ff;
+}
+
+.box-hotel .box-img {
+    width: 100%;
+    height: 100%;
+    margin-top: 25px
+}
+
+.box-hotel .box-content {
+    margin-top: 25px;
+}
+
+.box-hotel .box-content > a {
+    color: black;
+}
+.box-hotel .box-content > a:hover {
+    color: #007bff;
+}
+
+.box-hotel .box-content .content-align {
+    text-align: left !important;
+}
+.box-hotel .box-content h2{
+    font-size: 27px;
+}
+
+.size-color-icon {
+    font-size: 20px;
+    color: yellow
+}
+
+.search-now {
+    height: 100px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 0px 40px -17px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 40px -17px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 40px -17px rgba(0, 0, 0, 0.75);
+}
+
+.request-email {
+    margin-top: 100px;
+    min-height: 200px;
+    text-align: center;
+    background: #5c9aff;
+    color: white
+}
+
+.request-email .setting-form {
+    margin-left: 200px;
+    margin-top: 30px
+}
+
+.request-email .setting-form .size-form {
+    width: 300px;
+}
+
+.none-border-radius {
+    border-radius: 0;
+}
+
+.footer {
+    min-height: 300px;
+    background: white;
+    color: black;
+    font-family: SansSerif;
+    text-align: left;
+}
+
+.footer a {
+    color: skyblue;
+    padding-left: 5px;
+}
+
+.footer .padding-footer {
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.btn-detail {
+    width: 140px;
+    border-radius: 0;
+    position: absolute;
+    bottom: 120px;
+    right: 16px
+}
+.size-date-form{
+    width: 350px!important;
+}
+.number-rooms{
+    margin-top: 20px;
+    font-family: source sans pro, sans-serif;
+    color: green;
+    font-weight: bolder;
+}
+

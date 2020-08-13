@@ -1,0 +1,82 @@
+.lef-content {
+    height: 450px;
+    width: 100%;
+    background: #febb02;
+}
+
+.lef-content h3 {
+    margin-top: 20px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.lef-content .form-group label {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.lef-content .form-group button {
+    margin-top: 20px;
+}
+
+.right-content {
+    min-height: 450px;
+    width: 100%;
+}
+
+.right-content .box-sd {
+    min-height: 300px;
+    margin-left: 10px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    -webkit-box-shadow: 0px 0px 40px -17px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 40px -17px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 40px -17px rgba(0, 0, 0, 0.75);
+}
+
+.right-content .box-sd .box-img{
+    margin-top: 25px;
+}
+.right-content .box-sd .box-content {
+    margin-top: 25px;
+}
+.right-content .box-sd .box-content h2{
+     font-size: 23px;
+ }
+
+.right-content .box-sd .box-content p{
+    margin-top: -7px;
+}
+.right-content .box-sd .box-content .content-align a{
+    font-size: 13px;
+}
+.right-content .box-sd .box-content .content-align .star-sp{
+    color: #febb02;
+    font-size: 13px;
+    margin-left: 20px;
+}
+.slick-mr {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.slick-mr .slick_slider .item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    transition: all linear .4s;
+}
+.slick-mr .slick_slider .slick-next{
+   margin-right: 24px;
+}
+.right-content .box-sd .box-content .button-detail{
+    margin-top: 30px;
+}
+.right-content .box-sd .box-content .button-detail button{
+    width: 100px;
+}
+.right-content .box-sd .box-content .button-detail a{
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,332 @@
+.booking-detail {
+    margin-top: 100px;
+    width: 100%;
+    min-height: 350px;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+}
+
+.booking-detail .tile-detail {
+    height: 50px;
+    color: skyblue;
+}
+
+.booking-detail .tile-detail h6 {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.booking-detail .tile-detail h6:after {
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    content: '';
+    opacity: 1;
+    background: #e3e3e3;
+}
+
+.check-in-out h4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.check-in-out .check-in .check-check {
+    font-size: 15px !important;
+    font-weight: normal;
+}
+
+.check-in-out .check-in p {
+    font-size: 13px;
+}
+
+.check-in-out .after h4:after {
+    position: absolute;
+    top: 15px;
+    bottom: 0;
+    left: 133px;
+    width: 1%;
+    height: 70%;
+    content: '';
+    opacity: 1;
+    background: #e3e3e3;
+}
+
+.length-stay {
+    margin-top: 10px;
+}
+
+.length-stay .content-length-stay > h2 {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.length-stay .number-length-stay > p {
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.length-stay .number-length-stay > p:after {
+    position: absolute;
+    top: 70px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    content: '';
+    opacity: 1;
+    background: #e3e3e3;
+}
+
+.selected-room {
+    margin-top: 30px;
+}
+
+.selected-room h6 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.selected-room p {
+    font-size: 13px;
+}
+
+.price-summary {
+    margin-top: 20px;
+    width: 100%;
+    min-height: 300px;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+}
+
+.price-summary .title-detail-price {
+    height: 50px;
+    color: skyblue;
+}
+
+.price-summary .title-detail-price h6 {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.price-summary .title-detail-price h6:after {
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    content: '';
+    opacity: 1;
+    background: #e3e3e3;
+}
+
+.price-summary .content-price {
+    min-height: 150px;
+}
+
+.price-summary .content-price .price-content p {
+    font-size: 13px;
+}
+
+.price-summary .content-price .name-content p {
+    font-size: 13px;
+}
+
+.total-price .col-4 h6 {
+    font-size: 20px;
+}
+
+.total-price .col-8 p {
+    text-align: right;
+    font-size: 20px;
+}
+
+.total-price .col-12 p {
+    text-align: end;
+    font-size: 13px;
+    color: green;
+}
+
+.total-price .col-12 p:after {
+    position: absolute;
+    top: -60px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    content: '';
+    opacity: 1;
+    background: #e3e3e3;
+}
+
+.payment {
+    margin-top: 20px;
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+}
+
+.payment .title-payment {
+    height: 50px;
+    color: skyblue;
+}
+
+.payment .title-payment h6 {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.payment .title-payment h6:after {
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    content: '';
+    opacity: 1;
+    background: #e3e3e3;
+}
+
+.payment div p {
+    font-size: 13px;
+    font-weight: bold;
+    color: green;
+}
+
+.payment .title-cancel {
+    height: 50px;
+    color: #aa6708;
+}
+
+.payment .title-cancel h6 {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.payment .title-cancel h6:after {
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    content: '';
+    opacity: 1;
+    background: #e3e3e3;
+}
+
+.payment .row .col-7 p {
+    color: black;
+}
+
+.payment .row .col-5 p {
+    color: black;
+}
+
+.details-if {
+    margin-top: 100px;
+    margin-left: 10px;
+}
+
+.details-if .name-hotel {
+    font-weight: bold;
+}
+
+.details-if .star {
+    color: #febb02;
+    font-size: 10px;
+    margin-top: -10px;
+    margin-left: 5px;
+}
+
+.details-if .address {
+    margin-top: 20px;
+}
+
+.title-right {
+    width: 80%;
+    height: 70px;
+    margin-left: 12px;
+    border: 1px solid green;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.title-right .content-title {
+    font-size: 17px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.title-right .content-title span i {
+    color: green;
+}
+
+.enter-details {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.enter-details .title-detail-if {
+    font-size: 18px;
+}
+.form-detail-if {
+    width: 100%;
+    min-height: 600px;
+    margin-left: 12px;
+    border: 1px solid #e3e3e3;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.form-detail-if .form{
+    margin-top: 30px;
+}
+.form-detail-if .label-align{
+    font-weight: bold;
+    font-size: 15px;
+}
+.cf-email{
+    margin-top: 45px;
+    font-family: "Calibri Light";
+    font-size: 13px;
+}
+.if-room{
+    height: 200px;
+    width: 100%;
+    border: 1px solid #e3e3e3;
+    background: #fffdfc;
+}
+.if-room h1{
+    font-size: 17px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.if-room h2{
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.if-room>div{
+    font-size: 10px;
+}
+.if-room>div .ml{
+    margin-left: 15px;
+}
+.if-room>span p{
+    font-size: 14px;
+}
+.btn-booking{
+    margin-top: 20px;
+    margin-left: 620px;
+}
