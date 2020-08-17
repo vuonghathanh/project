@@ -42,6 +42,11 @@ class BlogController extends Controller
 
     }
 
+    public function userList(){
+        $blogs = Blog::all();
+        return view('user/blog')->with('blogs',$blogs);
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -85,7 +90,15 @@ class BlogController extends Controller
      */
     public function show($id)
     {
-        //
+
+    }
+
+    public function showBlog($id){
+        $obj = Blog::orderByRaw("RAND()")->take(4)->get();
+        $blog = Blog::find($id);
+        return view('user/blog-detail')
+            ->with('blog',$blog)
+            ->with('obj',$obj);
     }
 
     /**

@@ -8,7 +8,22 @@ use function Symfony\Component\String\s;
 
 class Blog extends Model
 {
-    private static $cloudinary_link = 'https://res.cloudinary.com/thanhdeptrai/image/upload/';
+    private static $cloudinary_link = 'https://res.cloudinary.com/huydeptrai/image/upload/';
+
+    public function getSmallDetailsAttribute(){
+        if ($this->details == null || strlen($this->details) == 0){
+            return 'Khong co thong tin chi tiet cho blog nay';
+        }
+        $list_detail = array();
+        $details = explode('|', $this->details);
+//        dd($details);
+        foreach ($details as $dt){
+            if (strlen($dt) > 0){
+                array_push($list_detail,$dt);
+            }
+        }
+        return $list_detail;
+    }
 
     public function getSmallPhotoAttribute()
     {

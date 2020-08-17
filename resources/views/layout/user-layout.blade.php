@@ -41,11 +41,11 @@
                                         <a href="/">Home</a>
                                     </li>
                                     <li class="nav-item"><a href="/hotels">Booking Hotel</a></li>
-                                    <li class="nav-item"><a href="#">About</a></li>
+                                    <li class="nav-item"><a href="/about-us">About</a></li>
                                     <li class="nav-item"><a href="/contact">Contact-Us</a></li>
-                                    <li class="nav-item"><a href="#">Blog</a></li>
-                                    <li class="nav-item"><a href="#">Q&A</a></li>
-                                    <li class="nav-item"><a href="#"> <i class="fas fa-sign-in-alt"></i> Login</a></li>
+                                    <li class="nav-item"><a href="/blogs">Blog</a></li>
+                                    <li class="nav-item"><a href="/q&a-policy">Q&A</a></li>
+                                    <li class="nav-item"><a href="/login"> <i class="fas fa-sign-in-alt"></i> Login</a></li>
                                 </ul>
                             </div>
                         </div>

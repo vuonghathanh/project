@@ -415,7 +415,20 @@ nav {
     margin-top: 5px;
     background-color: #0b97c4
 }
-.btn-check-out a{
+
+.btn-check-out a {
     color: white;
     text-decoration: none;
 }
+
+#cover {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: whitesmoke;
+    z-index: 9999;
+}
+
+

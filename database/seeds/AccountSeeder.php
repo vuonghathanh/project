@@ -23,7 +23,6 @@ class AccountSeeder extends Seeder
         //Xóa toàn bộ dữ liệu cũ
         \Illuminate\Support\Facades\DB::table('accounts')->truncate();
         \Illuminate\Support\Facades\DB::table('accounts')->insert([
-
             [
 
                 'id' => 1,

@@ -1,79 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a142a866-327d-460e-8aaa-ecfdc3fef5af" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project-laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project-laravel.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/q&amp;a-polyci.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user/about-us.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user/blog-detail.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user/q&amp;a-policy.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Blog.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/BookingDetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/BookingDetail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Hotel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Hotel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AccountController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AccountController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Booking.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Booking.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HotelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HotelController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CheckOutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CheckOutController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RoomController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RoomController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RoomtypeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RoomtypeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ViewBookingHotelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ViewBookingHotelController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/FormCreateBlog.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/FormCreateBlog.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/FormCreateHotel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/FormCreateHotel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Requests/FormCreateRoom.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/FormCreateRoom.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/FormCreateRoomType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/FormCreateRoomType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Room.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Room.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_07_25_044158_create_accounts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_07_25_044158_create_accounts_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_07_25_045536_create_rooms_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_07_25_045536_create_rooms_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_07_25_071841_create_bookings_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_07_25_071841_create_bookings_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_07_25_072949_create_booking_details_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_07_25_072949_create_booking_details_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_07_28_081519_create_blogs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_07_28_081519_create_blogs_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/AccountSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/AccountSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/BlogSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/BlogSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/BookingDetailSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/BookingDetailSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/BookingSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/BookingSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/HotelSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/HotelSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/RoomTypeSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/RoomTypeSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/RoomsSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/RoomsSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/booking-hotel.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/booking-hotel.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/booking.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/booking.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/blog.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/blog.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/details-hotels.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/details-hotels.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/update-status/update-status-hotel.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/update-status/update-status-hotel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/style-detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/style-detail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/form/edit/edit-blog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/form/edit/edit-blog.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/form/edit/edit-hotel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/form/edit/edit-hotel.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/form/form-account.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/form/form-blog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/form/form-blog.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/form/form-room.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/form/form-room.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/list/detail/hotel-detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/list/detail/hotel-detail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/list/list-blog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/list/list-blog.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/list/list-hotel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/list/list-hotel.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/list/list-room-type.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/list/list-room-type.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/list/list-booking.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/list/list-booking.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/list/list-room.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/list/list-room.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layout/admin-layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/admin-layout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layout/detail-hotel-layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/detail-hotel-layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/user-layout.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/login-register/form-login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/login-register/form-login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/user-layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/user-layout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/user/blog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/blog.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/user/booking-hotel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/booking-hotel.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/user/booking.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/booking.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/contact-us.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/contact-us.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/detail-hotel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/detail-hotel.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/.travis/xdebug.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/scrivo/highlight.php/.travis/hasGitChanges.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sebastian/type/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sebastian/type/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sebastian/type/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sebastian/type/.idea/php-inspections-ea-ultimate.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sebastian/type/.idea/php.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sebastian/type/.idea/type.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sebastian/type/.idea/vcs.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +68,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="composer.json" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -206,7 +187,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../php-basic" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -214,6 +196,14 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\Desktop\Laravel\project-laravel\resources\views\user" />
+      <recent name="C:\Users\HP\Desktop\Laravel\project-laravel\public\css" />
+      <recent name="C:\Users\HP\Desktop\Laravel\project-laravel\public\css\toast" />
+      <recent name="C:\Users\HP\Desktop\Laravel\project-laravel\public" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -230,11 +220,50 @@
       <option name="presentableId" value="Default" />
       <updated>1597304165985</updated>
       <workItem from="1597304167165" duration="147000" />
-      <workItem from="1597304345742" duration="2087000" />
+      <workItem from="1597304345742" duration="9445000" />
+      <workItem from="1597320132075" duration="1867000" />
+      <workItem from="1597335309913" duration="3470000" />
+      <workItem from="1597373238764" duration="20265000" />
+      <workItem from="1597410191661" duration="6907000" />
+      <workItem from="1597466953155" duration="30000" />
+      <workItem from="1597467188107" duration="7192000" />
+      <workItem from="1597501786522" duration="10848000" />
+      <workItem from="1597563120921" duration="17051000" />
+      <workItem from="1597630314568" duration="2908000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1597412463722">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1597412463722" />
+    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1597595304739">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1597595304739" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1597589640012">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1597589640012" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1597508123362">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1597508123362" />
   </component>
 </project>

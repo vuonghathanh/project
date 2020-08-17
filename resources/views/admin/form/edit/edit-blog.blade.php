@@ -29,7 +29,7 @@
                         class="required">*</span></label>
                 <div class="col-md-6 col-sm-6">
                     <textarea class="form-control" id="editor2" rows="8"
-                              name="details">{!! $obj->description !!}</textarea>
+                              name="details">{!! $obj->details !!}</textarea>
                 </div>
             </div>
             <div class="field item form-group">

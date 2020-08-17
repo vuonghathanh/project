@@ -1,0 +1,28 @@
+.infor-checkout {
+    width: 100%;
+    min-height: 500px;
+    text-align: center;
+    border-right: 2px solid silver
+}
+
+.infor-checkout .title-checkout {
+    font-family: sans-serif, Verdana;
+    font-size: 30px;
+    padding-top: 30px
+}
+
+.infor-checkout .content-checkout {
+    min-height: 50px;
+    width: 100%;
+    border-radius: 20px;
+    background: aliceblue;
+    margin-top: 30px
+}
+
+.infor-checkout  .content-checkout > div {
+    padding-top: 10px
+}
+
+.infor-checkout .content-checkout > div .text-checkout {
+    font-size: 20px
+}

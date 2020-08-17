@@ -27,6 +27,7 @@
     @yield('title')
 </head>
 <body>
+<div id="cover"></div>
 <nav>
     {{--Header & menu--}}
     <div class="container-fluid">
@@ -44,11 +45,11 @@
                                         <a href="/">Home</a>
                                     </li>
                                     <li class="nav-item"><a href="/hotels">Booking Hotel</a></li>
-                                    <li class="nav-item"><a href="#">About</a></li>
+                                    <li class="nav-item"><a href="/about-us">About</a></li>
                                     <li class="nav-item"><a href="/contact">Contact-Us</a></li>
-                                    <li class="nav-item"><a href="#">Blog</a></li>
-                                    <li class="nav-item"><a href="#">Q&A</a></li>
-                                    <li class="nav-item"><a href="#"> <i class="fas fa-sign-in-alt"></i> Login</a></li>
+                                    <li class="nav-item"><a href="/blogs">Blog</a></li>
+                                    <li class="nav-item"><a href="/q&a-policy">Q&A</a></li>
+                                    <li class="nav-item"><a href="/login"> <i class="fas fa-sign-in-alt"></i> Login</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -59,8 +60,6 @@
     </div>
     {{--End header & menu--}}
 </nav>
-
-
 @yield('content')
 {{-- Start request email --}}
 <nav>
@@ -156,7 +155,6 @@
     </div>
 </nav>
 {{-- End footer --}}
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
         integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
         crossorigin="anonymous"></script>
@@ -165,8 +163,8 @@
 <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
 <script src="https://cdn.ckeditor.com/ckeditor5/20.0.0/classic/ckeditor.js"></script>
 
-<script src="{{asset('js/style-detail.js')}}"></script>
 <script src="{{asset('js/toast/jquery.toast.min.js')}}"></script>
 @yield('script')
+<script src="{{asset('js/style-detail.js')}}"></script>
 </body>
 </html>

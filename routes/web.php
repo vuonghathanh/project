@@ -15,10 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/',function (){
-   return view('user/home')->with('hotels',\App\Hotel::all());
-});
 
+
+//success & error
 Route::get('/error', function () {
     return view('error/error-404');
 });
@@ -28,14 +27,28 @@ Route::get('/success',function (){
 
 
 
+
 //Login-register
 Route::resource('/register','AccountController');
 Route::get('/login','LoginController@login');
 Route::post('/login','LoginController@processLogin');
 Route::get('/contact', function () {return view('user/contact-us');});
+
+
 //Rote user
 Route::resource('/hotels','ViewBookingHotelController');
 Route::get('/add','ViewBookingHotelController@addCart');
+Route::get('/',function (){
+    return view('user/home')->with('hotels',\App\Hotel::all());
+});
+Route::get('/about-us',function (){
+    return view('user/about-us');
+});
+Route::get('/q&a-policy',function (){
+    return view('user/q&a-policy');
+});
+Route::get('/blogs','BlogController@userList');
+Route::get('/blog/{id}','BlogController@showBlog');
 
 //Route check-out
 Route::middleware(['user.middleware'])->group(function (){
@@ -43,6 +56,7 @@ Route::middleware(['user.middleware'])->group(function (){
     Route::get('/remove','CheckOutController@remove');
     Route::get('/change','CheckOutController@change');
     Route::post('/submit','CheckOutController@submitBooking');
+    Route::get('/payment','CheckOutController@checkOut');
 });
 
 //Rote admin
@@ -50,6 +64,7 @@ Route::middleware(['admin.middleware'])->group(function (){
     Route::resource('/admin/hotels','HotelController');
     Route::resource('/admin/blogs','BlogController');
     Route::resource('/admin/rooms','RoomController');
+    Route::get('/admin/room-type-by-hotel','RoomController@getRoomTypeByHotelId');
     Route::resource('/admin/room-types','RoomtypeController');
 
     Route::resource('admin/bookings','BookingController');
@@ -69,6 +84,8 @@ Route::middleware(['admin.middleware'])->group(function (){
     Route::post('/room-change-status-all','RoomController@updateAllStatus');
     Route::post('/room-type-change-status-all','RoomtypeController@updateAllStatus');
     Route::post('/account-change-status-all','AdminCreateAccount@updateAllStatus');
+
+    Route::get('/admin/paypal-return','PayPalController@list');
 });
 
 

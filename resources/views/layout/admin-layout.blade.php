@@ -78,6 +78,7 @@
                                     <li><a href="/admin/accounts">List account</a></li>
                                     <li><a href="/admin/bookings">List booking</a></li>
                                     <li><a href="/admin/booking-details">List booking detail</a></li>
+                                    <li><a href="/admin/paypal-return">Paypal</a></li>
                                 </ul>
                             </li>
                             <li><a href="/chart-js"><i class="fa fa-bar-chart-o"></i> Data Presentation</a>

@@ -1,0 +1,10 @@
+*{
+    box-sizing: border-box;
+}
+.content_while{
+    text-align: center;
+    margin-top: 50px;
+}
+.butt p{
+    background: #2a99e8;
+}

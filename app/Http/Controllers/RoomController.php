@@ -24,7 +24,7 @@ class RoomController extends Controller
         $data['hotel_id'] = 0;
         $data['type_id'] = 0;
         $hotels = Hotel::all();
-        $types = RoomType::all();
+        $types = RoomType::where('hotel_id','=',$request->get('hotel_id'))->get();
         $list_rooms = Room::query();
         if($request->has('keyword') && strlen($request->get('keyword')) >0 ){
             $data['keyword']= $request->get('keyword');
@@ -180,5 +180,13 @@ class RoomController extends Controller
         $ids = $request->get('ids');
         Room::whereIn('id', $ids)->update(['status' => 0]);
         return redirect('/admin/rooms');
+    }
+
+    public function getRoomTypeByHotelId(Request $request){
+        $hotel = Hotel::find($request->get('hotelId'));
+        if($hotel == null){
+           return response()->json('Hotel is not found or has been deleted!', 404);
+        }
+        return $hotel->types_room;
     }
 }

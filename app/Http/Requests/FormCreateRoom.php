@@ -47,16 +47,16 @@ class FormCreateRoom extends FormRequest
         ];
     }
 
-//    public function withValidator($validator)
-//    {
-//        $validator->after(function ($validator){
-//            if($this->get('hotel' == 0)){
-//                $validator->errors()->add('hotel', 'Vui lòng chọn khách sạn!');
-//            }
-//            if($this->get('room_type' == 0)){
-//                $validator->errors()->add('room_type','Vui lòng nhập loại phòng!');
-//            }
-//        });
-//    }
+    public function withValidator($validator)
+    {
+        $validator->after(function ($validator){
+            if($this->get('hotel') == 0){
+                $validator->errors()->add('hotel', 'Vui lòng chọn khách sạn!');
+            }
+            if($this->get('room_type') == 0){
+                $validator->errors()->add('room_type','Vui lòng nhập loại phòng!');
+            }
+        });
+    }
 
 }

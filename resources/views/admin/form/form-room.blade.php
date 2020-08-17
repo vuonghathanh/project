@@ -50,10 +50,9 @@
                 <div class="field item form-group col-md-4 col-sm-4">
                     <label class="col-form-label col-md-5 col-sm-5  label-align">Room type<span
                             class="required">*</span></label>
-                    <div class="col-md-11 col-sm-11 " >
-                        <select class="form-control" id="type_select"   name="room_type">
+                    <div class="col-md-11 col-sm-11 ">
+                        <select class="form-control" id="type_select" name="room_type">
                             <option value="0" selected>Chọn type</option>
-
                         </select>
                         @if($errors->has('room_type'))
                             <span class="text-danger">* {{$errors->first('room_type')}}</span>
@@ -157,27 +156,24 @@
     </script>
     <script>
         $('#hotel_select').change(function () {
-            var value = $('#hotel_select').val();
-            var type = [];
-            var id = [];
-            var string = "";
-            @foreach($hotels as $hotel)
-            if (value === '{{$hotel->id}}') {
-                @foreach($hotel->types_room as $type)
-                type.push('{{$type->type}}');
-                id.push('{{$type->id}}')
-                @endforeach
-            }
-                @endforeach
-            for (let i = 0; i < type.length; i++) {
-                for (let j = 0; j < id.length; j++) {
-                    string = string + "<option value=''>" + type[i] + "</option>";
-                    break;
+            var hotelId = $('#hotel_select').val();
+            $.ajax({
+                'url': `/admin/room-type-by-hotel?hotelId=${hotelId}`,
+                'method': 'GET',
+                'success': function (data, text) {
+                    console.log(data);
+                    var listOption = `<option value="0">Chọn type</option>`;
+                    if(data.length > 0){
+                        for (let i = 0; i < data.length; i++) {
+                            listOption += `<option value="${data[i].id}">${data[i].type}</option>`;
+                        }
+                    }
+                    $('#type_select').html(listOption);
+                },
+                'error': function (jqXHR, error, errorThrown) {
+                    alert(`Error occurs, please try again! Error code ${jqXHR.status}, message ${jqXHR.responseText}`);
                 }
-            }
-            $('#type-select').html(string);
-            console.log(string)
-
+            })
         })
     </script>
 @endsection

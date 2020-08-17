@@ -84,7 +84,7 @@
                                                 <td>{{$obj->email}}</td>
                                                 <td>{{$obj->created_at}}</td>
                                                 <td>{{$obj->updated_at}}</td>
-                                                <td>{{$obj->status}}</td>
+                                                <td>{!! $obj->status_string !!}</td>
                                                 <td><a href="/admin/bookings/{{$obj->id}}" class="text-capitalize mr1">Detail</a></td>
                                                 <td><a href="#" class="text-orange mr-1 btn-confirm" id="confirm-{{$obj->id}}"> Confirm</a></td>
                                                 <td><a href="#" class="btn-cancel text-danger mr-1" id="cancel-{{$obj->id}}">Cancel</a></td>

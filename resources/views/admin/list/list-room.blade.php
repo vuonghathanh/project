@@ -50,10 +50,12 @@
                                             <div class="form-group">
                                                 <label for="exampleFormControlSelect1">Search by type</label>
                                                 <select name="type_id" class="form-control" id="type_select">
-                                                    <option value="0">All</option>
-                                                    @foreach($types as $cate)
-                                                        <option value="{{$cate->id}}" {{$cate->id == $type_id ? 'selected':''}}>{{$cate->type}}</option>
-                                                    @endforeach
+                                                    <option value="0">Chọn Phòng</option>
+                                                    @if($types != null)
+                                                        @foreach($types as $cate)
+                                                            <option value="{{$cate->id}}" {{$cate->id == $type_id ? 'selected':''}}>{{$cate->type}}</option>
+                                                        @endforeach
+                                                    @endif
                                                 </select>
                                             </div>
                                         </div>
@@ -186,15 +188,14 @@
     <script>
         $('#hotel_select').change(function (){
             $('#filter_form').submit();
+
         })
         $('#type_select').change(function (){
             $('#filter_form').submit();
         })
 
-        $('#hotel_select').change(function (){
-
-        })
     </script>
+
     <script src="{{asset('js/daterangepicker/daterangepicker.js')}}"></script>
     <script src="{{asset('js/update-status/update-status-room.js')}}"></script>
     <script src="{{asset('js/update-status/update-all-status-room.js')}}"></script>
