@@ -43,7 +43,7 @@ class BlogController extends Controller
     }
 
     public function userList(){
-        $blogs = Blog::all();
+        $blogs = Blog::where('status','=', 1)->get();
         return view('user/blog')->with('blogs',$blogs);
     }
 
@@ -56,6 +56,8 @@ class BlogController extends Controller
     {
         return view('admin/form/form-blog');
     }
+
+
 
     /**
      * Store a newly created resource in storage.
@@ -81,6 +83,9 @@ class BlogController extends Controller
         $obj->save();
         return redirect('/admin/blogs');
     }
+
+
+
 
     /**
      * Display the specified resource.

@@ -16,12 +16,39 @@ class ViewBookingHotelController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
+        $data = array();
         $hotels = Hotel::all();
-        return view('user/booking-hotel')->with('hotels', $hotels);
-    }
+        $rooms = Room::query();
+        if ($request->has('start') && strlen($request->get('start')) > 0 && $request->has('end') && strlen($request->get('end'))) {
+            $start = $request->get('start');
+            $end = $request->get('end');
+            Session::put('start',$start);
+            Session::put('end',$end);
+            Session::put('number_people',$request->get('number_people'));
+            $rooms = $rooms
+                ->whereNotIn('id',
+                    BookingDetail::select('room_id')
+                    ->where(function ($query) use ($start,$end){
+                        $query->where([
+                            ['start_with','<',$start],
+                            ['end_with','<',$start]
+                        ])->orWhere([
+                            ['start_with','>',$start],
+                            ['end_with','>',$end]
+                        ]);
 
+                    }))
+                ->where('number_people','=',$request->get('number_people'))
+                ->paginate(7)->appends($request->only($request->get('keyword')));
+        }else{
+            $rooms = null;
+        }
+        $data['hotels'] = $hotels;
+        $data['rooms'] = $rooms;
+        return view('user/booking-hotel')->with($data);
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -58,7 +85,9 @@ class ViewBookingHotelController extends Controller
         if ($request->has('start') && strlen($request->get('start')) > 0 && $request->has('end') && strlen($request->get('end'))) {
             $start = $request->get('start');
             $end = $request->get('end');
-
+            Session::put('start',$start);
+            Session::put('end',$end);
+            Session::put('number_people',$request->get('number_people'));
             $rooms = $rooms
                 ->find($id)
                 ->png_rooms()
@@ -72,7 +101,7 @@ class ViewBookingHotelController extends Controller
                         ['end_with','>',$end]
                     ]);
 
-                }))
+                }))->where('number_people','=',$request->get('number_people'))
                 ->paginate(7)->appends($request->only($request->get('keyword')));
 
         }else{
@@ -120,6 +149,14 @@ class ViewBookingHotelController extends Controller
         //
     }
 
+    public function showView($id, Request $request)
+    {
+        $room = Room::find($id);
+
+        return view('user/detail-room')
+            ->with('room', $room);
+    }
+
     public function addCart(Request $request)
     {
         $roomId = $request->get('roomId');
@@ -158,6 +195,8 @@ class ViewBookingHotelController extends Controller
             return;
         }
         $bookingCart[$room->id] = $bookingRoom;
+        Session::put('hotelId',$room->hotel->id);
         Session::put('bookingCart', $bookingCart);
     }
+
 }

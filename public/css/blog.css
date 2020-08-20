@@ -115,8 +115,7 @@
     margin-top: 50px;
     margin-bottom: 50px;
 }
-
-.detail-og{
+ .detail-og{
     width: 100%;
     height: 250px;
     border-radius: 5px;
@@ -126,6 +125,7 @@
     align-items: flex-end;
     transition: .6s ease-out;
     /*box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);*/
+
 }
 
 .detail-og{
@@ -209,5 +209,22 @@
     text-align: right;
     margin-top: 70px;
 }
+.new-blog{
+    margin-top: 70px
+}
+.new-blog .img-new-blog>a>img:hover{
 
-
+}
+.new-blog .text-new-blog{
+    background-color: #f0f0f0;margin-left: -38px
+}
+.new-blog .text-new-blog a{
+    color: black;
+}
+.new-blog .text-new-blog a:hover{
+    color: skyblue;
+}
+.new-blog .text-new-blog p{
+    text-align: left;
+    margin-top: 20px;
+}

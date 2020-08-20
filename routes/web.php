@@ -24,8 +24,9 @@ Route::get('/error', function () {
 Route::get('/success',function (){
    return view('success/order-success');
 });
-
-
+Route::get('/create-success',function (){
+    return view('success/blog-success');
+});
 
 
 //Login-register
@@ -33,6 +34,8 @@ Route::resource('/register','AccountController');
 Route::get('/login','LoginController@login');
 Route::post('/login','LoginController@processLogin');
 Route::get('/contact', function () {return view('user/contact-us');});
+Route::get('/logout-admin', 'LoginController@logOutAdmin');
+Route::get('/logout-user', 'LoginController@logOutUser');
 
 
 //Rote user
@@ -44,11 +47,17 @@ Route::get('/',function (){
 Route::get('/about-us',function (){
     return view('user/about-us');
 });
-Route::get('/q&a-policy',function (){
-    return view('user/q&a-policy');
+Route::get('/q&a',function (){
+    return view('user/q&a');
+});
+Route::get('/policy',function (){
+    return view('user/policy');
 });
 Route::get('/blogs','BlogController@userList');
 Route::get('/blog/{id}','BlogController@showBlog');
+Route::get('/room/{id}','ViewBookingHotelController@showView');
+Route::get('/create-blog','UserCreateBlog@userCreate');
+Route::post('/store-blog','UserCreateBlog@userStore');
 
 //Route check-out
 Route::middleware(['user.middleware'])->group(function (){

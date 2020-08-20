@@ -150,7 +150,7 @@
                                                     @endforeach
                                                 </td>
                                                 <td>{!! $obj->description !!}</td>
-                                                <td>{{$obj->price}}</td>
+                                                <td>{{$obj->price_format}}</td>
                                                 <td>{{$obj->number_people}}</td>
                                                 <td>{{$obj->created_at}}</td>
                                                 <td>{{$obj->updated_at}}</td>

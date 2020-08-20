@@ -7,8 +7,8 @@
     <nav style="min-height: 1700px">
         <div class="container content">
             <div>
-                <p class="content_while">Some outstanding hotels</p>
-                <p>Lorem ipsum dolor sit amet</p>
+                <p class="content_while">Một số khách sạn nổi bật</p>
+                <p>Dưới đây là một số khách sạn nổi bật trong thời gian qua!</p>
             </div>
 
             {{--  Start box hotels --}}
@@ -79,25 +79,14 @@
                 </div>
                 <div class="col-6 description">
                     <div>
-                        <h4>Phu Quoc is a famous tourist area of Vietnam, with a series of beaches and great entertainment
-                            services. </h4>
+                        <h4>Phú Quốc là khu du lịch nổi tiếng của Việt Nam, với hàng loạt bãi biển và các dịch vụ vui chơi giải trí tuyệt vời. </h4>
                         <br>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Phú Quốc là hòn đảo tươi đẹp của tỉnh Kiên Giang nằm trong khu vực vịnh Thái Lan, gần với biên giới Campuchia được rất nhiều khách du lịch trong và ngoài nước đánh giá cao bởi vẻ đẹp nguyên sơ của bờ biển trong xanh, trải dài cát trắng cùng cảnh thiên nhiên ngoạn mục, các cánh rừng nguyên sinh cổ thụ cùng hệ sinh thái động thực vật đa dạng. Dưới đây là 6 lý do, Du Lịch Quốc Tế Đại Việt khuyên bạn nên trải nghiệm hòn đảo Phú Quốc ngay trong mùa hè này để được tận hưởng các vẻ đẹp tuyệt vời mà thiên nhiên và cuộc sống nơi đây mang lại.</p>
                         <br>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur.
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                            id est laborum.</p>
+                        <p>Ngoài ra, bạn còn có thể lựa chọn ngọc trai tại Phú Quốc hay hải sâm, một thực phẩm cao cấp quý hiếm với giá trị cao trong việc nâng cao sức khỏe hoặc nấm tràm, loại nấm đặc trưng chỉ có tại Phú Quốc.</p>
                         <br>
-                        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                            beatae vitae dicta sunt explicabo.
-                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                            consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-                            est,</p>
-                        <button class="btn btn-light"><a href="#">Booking now</a></button>
+                        <p></p>
+                        <button class="btn btn-light"><a href="#">Đặt Ngay</a></button>
                     </div>
                 </div>
             </div>

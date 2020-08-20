@@ -22,6 +22,10 @@ class Booking extends Model
         }
     }
 
+    public function hotel(){
+        return $this->belongsTo('App\Hotel','hotel_id','id');
+    }
+
     public function account(){
         return $this->belongsTo('App\Account','account_id','id');
     }

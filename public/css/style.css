@@ -1,6 +1,7 @@
 * {
     padding: 0px;
     margin: 0px;
+    font-family: sans-serif, Verdana !important;
 }
 
 nav {
@@ -430,4 +431,12 @@ nav {
     color: green;
     font-weight: bolder;
 }
-
+#cover {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: whitesmoke;
+    z-index: 9999;
+}

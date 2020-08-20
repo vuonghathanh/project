@@ -1,4 +1,4 @@
-@extends('layout.user-layout')
+@extends('layout.detail-hotel-layout')
 @section('content')
     <link rel="stylesheet" href="{{asset('css/blog.css')}}">
     <nav style="min-height: 1400px">
@@ -26,7 +26,7 @@
                         <div class="col-4 left-content-detail-blog">
                             <div class="row content-blog-left">
                                 <h3 class="title-blog-ab">Du Lịch Phú Quốc</h3>
-                                <p>Trực thuộc tỉnh Kiên Giang,<strong>Phú Quốc</strong> được mệnh danh là Đảo Ngọc. Với
+                                <p>Trực thuộc tỉnh Kiên Giang, <strong>Phú Quốc</strong> được mệnh danh là Đảo Ngọc. Với
                                     những bãi biển nước xanh trong vắt như Bãi Sao và Bãi Dài, Phú Quốc thực sự là thiên
                                     đường cho những người yêu biển. Thị trấn Dương Đông là nơi tập trung dân cư sầm uất
                                     nhất trên đảo Phú Quốc, đặc biệt là khu chợ đêm nằm gần Dinh Cậu. Ngoài ra, làng
@@ -36,23 +36,21 @@
                                     Bắc Đảo, Gành Dầu.
                                     <br>
                                     Cùng <strong>LuonLoPhuQuoc.com</strong> đặt phòng khách sạn khi du lịch Phú Quốc:
-                                    Danh sách khách sạn Phú Quốc.</p>
+                                    Danh sách khách sạn Phú Quốc. </p>
                             </div>
                             <div class="row">
                                 <div class="title-blog-ab-bt">
                                     <h2 style="margin-top: 30px">Bài Viết Mới</h2>
                                 </div>
                                 @foreach($obj as $blog)
-                                    <a href="/blog/{{$blog->id}}">
                                         <div class="detail-og" style="margin-top: 30px">
-                                            <a href="#"><img
+                                            <a href="javascript:void(0)"><img
                                                     src="{{$blog->large_photo}}"
                                                     alt=""></a>
                                             <div class="og-title">
-                                                <h5 style="margin-bottom: 500px">{{$blog->title}}</h5>
+                                                <h5 style=""><a href="/blog/{{$blog->id}}" style="color: white;">{{$blog->title}}</a></h5>
                                             </div>
                                         </div>
-                                    </a>
                                 @endforeach
                             </div>
                         </div>

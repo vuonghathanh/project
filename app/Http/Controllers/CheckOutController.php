@@ -47,6 +47,7 @@ class CheckOutController extends Controller
         $booking->first_name = $request->get('first_name');
         $booking->last_name = $request->get('last_name');
         $booking->email = $request->get('email');
+        $booking->hotel_id = Session::get('hotelId');
         $booking->created_at = Carbon::now()->addDays(0)->format('Y-m-d H:i:s');
         $booking->updated_at = Carbon::now()->addDays(0)->format('Y-m-d H:i:s');
 

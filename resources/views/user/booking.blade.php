@@ -42,7 +42,9 @@
                                 <div class="selected-room">
                                     <div class="row">
                                         <div class="col-12">
-                                            <h6 style="margin-top: 10px">Bạn đã đặt: </h6>
+                                            <div class="col-8">
+                                                <h6 style="margin-top: 10px">Bạn đã đặt: </h6>
+                                            </div>
                                         </div>
 
                                             <div class="col-8">
@@ -193,7 +195,14 @@
                                 <div class="selected-room">
                                     <div class="row">
                                         <div class="col-12">
-                                            <h6>Bạn đã đặt: </h6>
+                                            <div class="row">
+                                                <div class="col-9">
+                                                    <h6>Bạn đã đặt: </h6>
+                                                </div>
+                                                <div class="col-3">
+                                                    <a href="/hotels/{{$getKey['hotelId']}}?&start={{\Illuminate\Support\Facades\Session::get('start')}}&end={{\Illuminate\Support\Facades\Session::get('end')}}&number_people={{\Illuminate\Support\Facades\Session::get('number_people')}}">+</a>
+                                                </div>
+                                            </div>
                                         </div>
                                         @foreach($bookingCart as $key => $bookingRoom)
                                             <div class="col-8">
@@ -420,7 +429,7 @@
                 }
             })
             $('#change').click(function (){
-                if (confirm('Bạn có chắc chắn muốn thay đổi không? ')){
+                if (confirm('Bạn có chắc chắn muốn xóa tất cả thông tin trong đơn hàng này? ')){
                     $('#change').attr("href","/change");
                 }
             })

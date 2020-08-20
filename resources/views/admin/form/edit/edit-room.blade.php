@@ -155,6 +155,7 @@
                 var splittedImgName = imgName.split('.');
                 var imgCode = splittedImgName[0];
                 $('input[data-cloudinary-public-id="' + imgCode + '"]').remove();
+                $(this).parent().remove();
             });
 
         })

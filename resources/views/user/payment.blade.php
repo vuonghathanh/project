@@ -66,8 +66,8 @@
             <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" style="padding-top: 250px">
                 <input type="hidden" name="cmd" value="_xclick">
                 <input type="hidden" name="business" value="sb-7nzet2907842@business.example.com">
-                <input type="hidden" name="item_name" value="{{$booking->id}}">
-                <input type="hidden" name="item_number" value="MEM32507725">
+                <input type="hidden" name="item_name" value="Booking Hotel">
+                <input type="hidden" name="item_number" value="{{$booking->id}}">
                 <input type="hidden" name="amount" value="{{$booking->total_price/2/23060}}">
                 <input type="hidden" name="tax" value="0">
                 <input type="hidden" name="quantity" value="1">
@@ -76,13 +76,13 @@
                 <!-- Enable override of buyers's address stored with PayPal . -->
                 <input type="hidden" name="address_override" value="1">
                 <!-- Set variables that override the address stored with PayPal. -->
-                <input type="hidden" name="first_name" value="John">
-                <input type="hidden" name="last_name" value="Doe">
+                <input type="hidden" name="first_name" value="{{$booking->first_name}}">
+                <input type="hidden" name="last_name" value="{{$booking->last_name}}">
                 <input type="hidden" name="address1" value="345 Lark Ave">
                 <input type="hidden" name="city" value="San Jose">
                 <input type="hidden" name="state" value="CA">
                 <input type="hidden" name="zip" value="95121">
-                <input type="hidden" name="country" value="US">
+                <input type="hidden" name="country" value="Ha Noi">
                 <input type="image" name="submit"
                        src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif"
                        alt="PayPal - The safer, easier way to pay online">

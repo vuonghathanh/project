@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Account;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class LoginController extends Controller
 {
@@ -29,5 +30,15 @@ class LoginController extends Controller
         if ($existingAccount->role == 'user'){
             return redirect('/check-out');
         }
+    }
+    public function logOutAdmin(){
+        Session::remove('username');
+        Session::remove('role');
+        return redirect('/login');
+    }
+    public function logOutUser(){
+        Session::remove('username');
+        Session::remove('role');
+        return redirect('/');
     }
 }

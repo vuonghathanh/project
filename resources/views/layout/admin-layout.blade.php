@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon"  href="{{asset('image/logo2.png')}}">
-    <meta name="csrf-token" content="{{ csrf_token() }}" />
+    <link rel="shortcut icon" href="{{asset('image/logo2.png')}}">
+    <meta name="csrf-token" content="{{ csrf_token() }}"/>
 
 
     <title>Gentelella Alela! | </title>
@@ -77,8 +77,6 @@
                                     <li><a href="/admin/blogs">List blog</a></li>
                                     <li><a href="/admin/accounts">List account</a></li>
                                     <li><a href="/admin/bookings">List booking</a></li>
-                                    <li><a href="/admin/booking-details">List booking detail</a></li>
-                                    <li><a href="/admin/paypal-return">Paypal</a></li>
                                 </ul>
                             </li>
                             <li><a href="/chart-js"><i class="fa fa-bar-chart-o"></i> Data Presentation</a>
@@ -95,13 +93,21 @@
                 <div class="nav toggle">
                     <a id="menu_toggle"><i class="fa fa-bars"></i></a>
                 </div>
-                <nav class="nav navbar-nav">
+                <nav class="nav navbar-nav" style="margin-left: 50px">
                     <ul class=" navbar-right">
-                        <li class="nav-item " style="padding-left: 15px;">
+                        <li class="nav-item " >
                             <a href="javascript:;" class="user-profile" aria-haspopup="true"
-                               id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-                                <img src="{{asset('dist/images/img.jpg')}}" alt="">John Doe
+                               id="navbarDropdown" data-toggle="dropdown" aria-expanded="false" >
+                                <img src="{{asset('dist/images/img.jpg')}}"
+                                     alt="">{{\Illuminate\Support\Facades\Session::get('username')}}
                             </a>
+                            <div class="ml-auto">
+                                <div class="dropdown sub-dropdown">
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dd1">
+                                        <a class="dropdown-item" href="/logout-admin">Log out</a>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </nav>

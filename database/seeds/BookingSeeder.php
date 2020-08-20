@@ -25,6 +25,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Tran',
                 'last_name' => 'Trang',
                 'email' => 'trangtran@gmail.com',
+                'hotel_id' => 1,
                 'created_at' => \Carbon\Carbon::now()->addDays(-1)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-1)->format('Y-m-d H:i:s'),
             ],[
@@ -36,6 +37,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Hoang',
                 'last_name' => 'Huy',
                 'email' => 'hoanghuy@gmail.com',
+                'hotel_id' => 1,
                 'created_at' => \Carbon\Carbon::now()->addDays(-4)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-4)->format('Y-m-d H:i:s'),
             ],[
@@ -47,6 +49,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Ha',
                 'last_name' => 'Thanh',
                 'email' => 'hathanh@gmail.com',
+                'hotel_id' => 1,
                 'created_at' => \Carbon\Carbon::now()->addDays(-9)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-9)->format('Y-m-d H:i:s'),
             ],[
@@ -58,6 +61,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Cong',
                 'last_name' => 'Manh',
                 'email' => 'congmanh@gmail.com',
+                'hotel_id' => 1,
                 'created_at' => \Carbon\Carbon::now()->addDays(-13)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-13)->format('Y-m-d H:i:s'),
             ],[
@@ -69,6 +73,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Hai',
                 'last_name' => 'Tuan',
                 'email' => 'haituan@gmail.com',
+                'hotel_id' => 1,
                 'created_at' => \Carbon\Carbon::now()->addDays(-19)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-19)->format('Y-m-d H:i:s'),
             ],[
@@ -80,6 +85,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Hai',
                 'last_name' => 'Tuan',
                 'email' => 'haituan@gmail.com',
+                'hotel_id' => 1,
                 'created_at' => \Carbon\Carbon::now()->addDays(-5)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-5)->format('Y-m-d H:i:s'),
             ],[
@@ -91,6 +97,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Cong',
                 'last_name' => 'Manh',
                 'email' => 'congmanh@gmail.com',
+                'hotel_id' => 1,
                 'created_at' => \Carbon\Carbon::now()->addDays(5)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(5)->format('Y-m-d H:i:s'),
             ],[
@@ -102,6 +109,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Ha',
                 'last_name' => 'Thanh',
                 'email' => 'hathanh@gmail.com',
+                'hotel_id' => 1,
                 'created_at' => \Carbon\Carbon::now()->addDays(2)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(2)->format('Y-m-d H:i:s'),
             ],[
@@ -113,6 +121,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Hoang',
                 'last_name' => 'Huy',
                 'email' => 'hoanghuy@gmail.com',
+                'hotel_id' => 1,
                 'created_at' => \Carbon\Carbon::now()->addDays(-1)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-1)->format('Y-m-d H:i:s'),
             ],[
@@ -124,6 +133,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Tran',
                 'last_name' => 'Trang',
                 'email' => 'trantrang@gmail.com',
+                'hotel_id' => 1,
                 'created_at' => \Carbon\Carbon::now()->addDays(-3)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-3)->format('Y-m-d H:i:s'),
             ],[
@@ -135,6 +145,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Hoang',
                 'last_name' => 'Huy',
                 'email' => 'hoanghuy@gmail.com',
+                'hotel_id' => 1,
                 'created_at' => \Carbon\Carbon::now()->addDays(-8)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-8)->format('Y-m-d H:i:s'),
             ],[
@@ -146,6 +157,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Ha',
                 'last_name' => 'Thanh',
                 'email' => 'hathanh@gmail.com',
+                'hotel_id' => 1,
                 'created_at' => \Carbon\Carbon::now()->addDays(-10)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-10)->format('Y-m-d H:i:s'),
             ],[
@@ -157,6 +169,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Cong',
                 'last_name' => 'Manh',
                 'email' => 'congmanh@gmail.com',
+                'hotel_id' => 1,
                 'created_at' => \Carbon\Carbon::now()->addDays(-15)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-15)->format('Y-m-d H:i:s'),
             ],[
@@ -168,6 +181,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Hai',
                 'last_name' => 'Tuan',
                 'email' => 'haituan@gmail.com',
+                'hotel_id' => 1,
                 'created_at' => \Carbon\Carbon::now()->addDays(-16)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-16)->format('Y-m-d H:i:s'),
             ],[
@@ -179,6 +193,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Tran',
                 'last_name' => 'Trang',
                 'email' => 'trantrang@gmail.com',
+                'hotel_id' => 1,
                 'created_at' => \Carbon\Carbon::now()->addDays(10)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(10)->format('Y-m-d H:i:s'),
             ],[
@@ -190,6 +205,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Ha',
                 'last_name' => 'Thanh',
                 'email' => 'hathanh@gmail.com',
+                'hotel_id' => 1,
                 'created_at' => \Carbon\Carbon::now()->addDays(8)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(8)->format('Y-m-d H:i:s'),
             ],[
@@ -201,6 +217,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Cong',
                 'last_name' => 'Manh',
                 'email' => 'congmanh@gmail.com',
+                'hotel_id' => 1,
                 'created_at' => \Carbon\Carbon::now()->addDays(-1)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-1)->format('Y-m-d H:i:s'),
             ],[
@@ -212,6 +229,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Hai',
                 'last_name' => 'Tuan',
                 'email' => 'haituan@gmail.com',
+                'hotel_id' => 1,
                 'created_at' => \Carbon\Carbon::now()->addDays(-3)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-3)->format('Y-m-d H:i:s'),
             ],[
@@ -223,6 +241,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Tran',
                 'last_name' => 'Trang',
                 'email' => 'trantrang@gmail.com',
+                'hotel_id' => 1,
                 'created_at' => \Carbon\Carbon::now()->addDays(-9)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-9)->format('Y-m-d H:i:s'),
             ],[
@@ -234,6 +253,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Hoang',
                 'last_name' => 'Huy',
                 'email' => 'hoanghuy@gmail.com',
+                'hotel_id' => 1,
                 'created_at' => \Carbon\Carbon::now()->addDays(-11)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-11)->format('Y-m-d H:i:s'),
             ],[
@@ -245,6 +265,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Cong',
                 'last_name' => 'Manh',
                 'email' => 'congmanh@gmail.com',
+                'hotel_id' => 1,
                 'created_at' => \Carbon\Carbon::now()->addDays(-14)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-14)->format('Y-m-d H:i:s'),
             ],[
@@ -256,6 +277,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Hai',
                 'last_name' => 'Tuan',
                 'email' => 'haituan@gmail.com',
+                'hotel_id' => 1,
                 'created_at' => \Carbon\Carbon::now()->addDays(9)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(9)->format('Y-m-d H:i:s'),
             ],[
@@ -267,6 +289,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Tran',
                 'last_name' => 'Trang',
                 'email' => 'trantrang@gmail.com',
+                'hotel_id' => 1,
                 'created_at' => \Carbon\Carbon::now()->addDays(7)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(7)->format('Y-m-d H:i:s'),
             ],[
@@ -278,6 +301,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Hoang',
                 'last_name' => 'Huy',
                 'email' => 'hoanghuy@gmail.com',
+                'hotel_id' => 1,
                 'created_at' => \Carbon\Carbon::now()->addDays(1)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(1)->format('Y-m-d H:i:s'),
             ],[
@@ -289,6 +313,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Ha',
                 'last_name' => 'Thanh',
                 'email' => 'hathanh@gmail.com',
+                'hotel_id' => 1,
                 'created_at' => \Carbon\Carbon::now()->addDays(-9)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-9)->format('Y-m-d H:i:s'),
             ],[
@@ -300,6 +325,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Cong',
                 'last_name' => 'Manh',
                 'email' => 'congmanh@gmail.com',
+                'hotel_id' => 1,
                 'created_at' => \Carbon\Carbon::now()->addDays(10)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(10)->format('Y-m-d H:i:s'),
             ],[
@@ -311,6 +337,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Hai',
                 'last_name' => 'Tuan',
                 'email' => 'haituan@gmail.com',
+                'hotel_id' => 1,
                 'created_at' => \Carbon\Carbon::now()->addDays(8)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(8)->format('Y-m-d H:i:s'),
             ],[
@@ -322,6 +349,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Hai',
                 'last_name' => 'Tuan',
                 'email' => 'haituan@gmail.com',
+                'hotel_id' => 1,
                 'created_at' => \Carbon\Carbon::now()->addDays(5)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(5)->format('Y-m-d H:i:s'),
             ],[
@@ -333,6 +361,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Cong',
                 'last_name' => 'Manh',
                 'email' => 'congmanh@gmail.com',
+                'hotel_id' => 1,
                 'created_at' => \Carbon\Carbon::now()->addDays(-1)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-1)->format('Y-m-d H:i:s'),
             ],[
@@ -344,6 +373,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Ha',
                 'last_name' => 'Thanh',
                 'email' => 'hathanh@gmail.com',
+                'hotel_id' => 1,
                 'created_at' => \Carbon\Carbon::now()->addDays(-7)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-7)->format('Y-m-d H:i:s'),
             ],[
@@ -355,6 +385,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Hoang',
                 'last_name' => 'Huy',
                 'email' => 'hoanghuy@gmail.com',
+                'hotel_id' => 2,
                 'created_at' => \Carbon\Carbon::now()->addDays(-13)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-13)->format('Y-m-d H:i:s'),
             ],[
@@ -366,6 +397,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Tran',
                 'last_name' => 'Trang',
                 'email' => 'trantrang@gmail.com',
+                'hotel_id' => 2,
                 'created_at' => \Carbon\Carbon::now()->addDays(-14)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-14)->format('Y-m-d H:i:s'),
             ],[
@@ -377,6 +409,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Hai',
                 'last_name' => 'Tuan',
                 'email' => 'haituan@gmail.com',
+                'hotel_id' => 2,
                 'created_at' => \Carbon\Carbon::now()->addDays(9)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(9)->format('Y-m-d H:i:s'),
             ],[
@@ -388,6 +421,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Cong',
                 'last_name' => 'Manh',
                 'email' => 'congmanh@gmail.com',
+                'hotel_id' => 2,
                 'created_at' => \Carbon\Carbon::now()->addDays(3)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(3)->format('Y-m-d H:i:s'),
             ],[
@@ -399,6 +433,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Ha',
                 'last_name' => 'Thanh',
                 'email' => 'hathanh@gmail.com',
+                'hotel_id' => 2,
                 'created_at' => \Carbon\Carbon::now()->addDays(0)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(0)->format('Y-m-d H:i:s'),
             ],[
@@ -410,6 +445,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Hoang',
                 'last_name' => 'Huy',
                 'email' => 'hoanghuy@gmail.com',
+                'hotel_id' => 2,
                 'created_at' => \Carbon\Carbon::now()->addDays(-6)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-6)->format('Y-m-d H:i:s'),
             ],[
@@ -421,6 +457,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Tran',
                 'last_name' => 'Trang',
                 'email' => 'trantrang@gmail.com',
+                'hotel_id' => 2,
                 'created_at' => \Carbon\Carbon::now()->addDays(-10)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-10)->format('Y-m-d H:i:s'),
             ],[
@@ -432,6 +469,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Hoang',
                 'last_name' => 'Huy',
                 'email' => 'hoanghuy@gmail.com',
+                'hotel_id' => 2,
                 'created_at' => \Carbon\Carbon::now()->addDays(9)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(9)->format('Y-m-d H:i:s'),
             ],[
@@ -443,6 +481,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Cong',
                 'last_name' => 'Manh',
                 'email' => 'congmanh@gmail.com',
+                'hotel_id' => 2,
                 'created_at' => \Carbon\Carbon::now()->addDays(6)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(6)->format('Y-m-d H:i:s'),
             ],[
@@ -454,6 +493,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Ha',
                 'last_name' => 'Thanh',
                 'email' => 'hathanh@gmail.com',
+                'hotel_id' => 2,
                 'created_at' => \Carbon\Carbon::now()->addDays(3)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(3)->format('Y-m-d H:i:s'),
             ],[
@@ -465,6 +505,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Tran',
                 'last_name' => 'Trang',
                 'email' => 'trantrang@gmail.com',
+                'hotel_id' => 2,
                 'created_at' => \Carbon\Carbon::now()->addDays(1)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(1)->format('Y-m-d H:i:s'),
             ],[
@@ -476,6 +517,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Hai',
                 'last_name' => 'Tuan',
                 'email' => 'haituan@gmail.com',
+                'hotel_id' => 2,
                 'created_at' => \Carbon\Carbon::now()->addDays(-5)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-5)->format('Y-m-d H:i:s'),
             ],[
@@ -487,6 +529,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Hoang',
                 'last_name' => 'Huy',
                 'email' => 'hoanghuy@gmail.com',
+                'hotel_id' => 2,
                 'created_at' => \Carbon\Carbon::now()->addDays(-10)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-10)->format('Y-m-d H:i:s'),
             ],[
@@ -498,6 +541,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Ha',
                 'last_name' => 'Thanh',
                 'email' => 'hathanh@gmail.com',
+                'hotel_id' => 2,
                 'created_at' => \Carbon\Carbon::now()->addDays(-13)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-13)->format('Y-m-d H:i:s'),
             ],[
@@ -509,6 +553,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Cong',
                 'last_name' => 'Manh',
                 'email' => 'congmanh@gmail.com',
+                'hotel_id' => 2,
                 'created_at' => \Carbon\Carbon::now()->addDays(10)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(10)->format('Y-m-d H:i:s'),
             ],[
@@ -520,6 +565,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Tran',
                 'last_name' => 'Trang',
                 'email' => 'trantrang@gmail.com',
+                'hotel_id' => 2,
                 'created_at' => \Carbon\Carbon::now()->addDays(5)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(5)->format('Y-m-d H:i:s'),
             ],[
@@ -531,6 +577,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Hoang',
                 'last_name' => 'Huy',
                 'email' => 'hoanghuy@gmail.com',
+                'hotel_id' => 2,
                 'created_at' => \Carbon\Carbon::now()->addDays(3)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(3)->format('Y-m-d H:i:s'),
             ],[
@@ -542,6 +589,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Ha',
                 'last_name' => 'Thanh',
                 'email' => 'hathanh@gmail.com',
+                'hotel_id' => 2,
                 'created_at' => \Carbon\Carbon::now()->addDays(1)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(1)->format('Y-m-d H:i:s'),
             ],[
@@ -553,6 +601,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Hai',
                 'last_name' => 'Tuan',
                 'email' => 'haituan@gmail.com',
+                'hotel_id' => 2,
                 'created_at' => \Carbon\Carbon::now()->addDays(-2)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-2)->format('Y-m-d H:i:s'),
             ],[
@@ -564,6 +613,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Cong',
                 'last_name' => 'Manh',
                 'email' => 'congmanh@gmail.com',
+                'hotel_id' => 2,
                 'created_at' => \Carbon\Carbon::now()->addDays(10)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(10)->format('Y-m-d H:i:s'),
             ],[
@@ -575,6 +625,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Hoang',
                 'last_name' => 'Huy',
                 'email' => 'hoanghuy@gmail.com',
+                'hotel_id' => 2,
                 'created_at' => \Carbon\Carbon::now()->addDays(5)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(5)->format('Y-m-d H:i:s'),
             ],[
@@ -586,6 +637,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Tran',
                 'last_name' => 'Trang',
                 'email' => 'trantrang@gmail.com',
+                'hotel_id' => 3,
                 'created_at' => \Carbon\Carbon::now()->addDays(2)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(2)->format('Y-m-d H:i:s'),
             ],[
@@ -597,6 +649,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Ha',
                 'last_name' => 'Thanh',
                 'email' => 'hathanh@gmail.com',
+                'hotel_id' => 2,
                 'created_at' => \Carbon\Carbon::now()->addDays(1)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(1)->format('Y-m-d H:i:s'),
             ],[
@@ -608,6 +661,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Cong',
                 'last_name' => 'Manh',
                 'email' => 'congmanh@gmail.com',
+                'hotel_id' => 2,
                 'created_at' => \Carbon\Carbon::now()->addDays(-1)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-1)->format('Y-m-d H:i:s'),
             ],[
@@ -619,6 +673,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Hai',
                 'last_name' => 'Tuan',
                 'email' => 'haituan@gmail.com',
+                'hotel_id' => 2,
                 'created_at' => \Carbon\Carbon::now()->addDays(-3)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-3)->format('Y-m-d H:i:s'),
             ],[
@@ -630,6 +685,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Tran',
                 'last_name' => 'Trang',
                 'email' => 'trantrang@gmail.com',
+                'hotel_id' => 3,
                 'created_at' => \Carbon\Carbon::now()->addDays(-6)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-6)->format('Y-m-d H:i:s'),
             ],[
@@ -641,6 +697,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Hoang',
                 'last_name' => 'Huy',
                 'email' => 'hoanghuy@gmail.com',
+                'hotel_id' => 2,
                 'created_at' => \Carbon\Carbon::now()->addDays(-7)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-7)->format('Y-m-d H:i:s'),
             ],[
@@ -652,6 +709,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Ha',
                 'last_name' => 'Thanh',
                 'email' => 'hathanh@gmail.com',
+                'hotel_id' => 2,
                 'created_at' => \Carbon\Carbon::now()->addDays(-9)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-9)->format('Y-m-d H:i:s'),
             ],[
@@ -663,6 +721,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Cong',
                 'last_name' => 'Manh',
                 'email' => 'congmanh@gmail.com',
+                'hotel_id' => 2,
                 'created_at' => \Carbon\Carbon::now()->addDays(-10)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-10)->format('Y-m-d H:i:s'),
             ],[
@@ -674,6 +733,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Hai',
                 'last_name' => 'Tuan',
                 'email' => 'haituan@gmail.com',
+                'hotel_id' => 2,
                 'created_at' => \Carbon\Carbon::now()->addDays(-12)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-12)->format('Y-m-d H:i:s'),
             ],[
@@ -685,6 +745,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Hoang',
                 'last_name' => 'Huy',
                 'email' => 'hoanghuy@gmail.com',
+                'hotel_id' => 3,
                 'created_at' => \Carbon\Carbon::now()->addDays(-14)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-14)->format('Y-m-d H:i:s'),
             ],[
@@ -696,6 +757,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Cong',
                 'last_name' => 'Manh',
                 'email' => 'congmanh@gmail.com',
+                'hotel_id' => 3,
                 'created_at' => \Carbon\Carbon::now()->addDays(-15)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-15)->format('Y-m-d H:i:s'),
             ],[
@@ -707,6 +769,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Ha',
                 'last_name' => 'Thanh',
                 'email' => 'hathanh@gmail.com',
+                'hotel_id' => 3,
                 'created_at' => \Carbon\Carbon::now()->addDays(9)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(9)->format('Y-m-d H:i:s'),
             ],[
@@ -718,6 +781,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Tran',
                 'last_name' => 'Trang',
                 'email' => 'trantrang@gmail.com',
+                'hotel_id' => 3,
                 'created_at' => \Carbon\Carbon::now()->addDays(6)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(6)->format('Y-m-d H:i:s'),
             ],[
@@ -729,6 +793,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Hai',
                 'last_name' => 'Tuan',
                 'email' => 'haituan@gmail.com',
+                'hotel_id' => 3,
                 'created_at' => \Carbon\Carbon::now()->addDays(4)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(4)->format('Y-m-d H:i:s'),
             ],[
@@ -740,6 +805,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Ha',
                 'last_name' => 'Thanh',
                 'email' => 'hathanh@gmaill.com',
+                'hotel_id' => 3,
                 'created_at' => \Carbon\Carbon::now()->addDays(1)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(1)->format('Y-m-d H:i:s'),
             ],[
@@ -751,6 +817,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Hai',
                 'last_name' => 'Tuan',
                 'email' => 'haituan@gmail.com',
+                'hotel_id' => 3,
                 'created_at' => \Carbon\Carbon::now()->addDays(-1)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-1)->format('Y-m-d H:i:s'),
             ],[
@@ -762,6 +829,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Cong',
                 'last_name' => 'Manh',
                 'email' => 'congmanh@gmail.com',
+                'hotel_id' => 3,
                 'created_at' => \Carbon\Carbon::now()->addDays(-3)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-3)->format('Y-m-d H:i:s'),
             ],[
@@ -773,6 +841,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Tran',
                 'last_name' => 'Trang',
                 'email' => 'trantrang@gmail.com',
+                'hotel_id' => 3,
                 'created_at' => \Carbon\Carbon::now()->addDays(-4)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-4)->format('Y-m-d H:i:s'),
             ],[
@@ -784,6 +853,7 @@ class BookingSeeder extends Seeder
                 'first_name' => 'Hoang',
                 'last_name' => 'Huy',
                 'email' => 'hoanghuy@gmail.com',
+                'hotel_id' => 3,
                 'created_at' => \Carbon\Carbon::now()->addDays(-5)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-5)->format('Y-m-d H:i:s'),
             ]

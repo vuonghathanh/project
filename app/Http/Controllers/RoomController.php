@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\BookingDetail;
 use App\Hotel;
 use App\Http\Requests\FormCreateRoom;
 use App\Room;
 use App\RoomType;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\Session;
 use MongoDB\BSON\Type;
 
 class RoomController extends Controller
@@ -24,11 +26,11 @@ class RoomController extends Controller
         $data['hotel_id'] = 0;
         $data['type_id'] = 0;
         $hotels = Hotel::all();
-        $types = RoomType::where('hotel_id','=',$request->get('hotel_id'))->get();
+        $types = RoomType::where('hotel_id', '=', $request->get('hotel_id'))->get();
         $list_rooms = Room::query();
-        if($request->has('keyword') && strlen($request->get('keyword')) >0 ){
-            $data['keyword']= $request->get('keyword');
-            $list_rooms = $list_rooms->where('floor', '=',  $request->get('keyword'));
+        if ($request->has('keyword') && strlen($request->get('keyword')) > 0) {
+            $data['keyword'] = $request->get('keyword');
+            $list_rooms = $list_rooms->where('floor', '=', $request->get('keyword'));
         }
         if ($request->has('start') && strlen($request->get('start')) > 0 && $request->has('end') && strlen($request->get('end')) > 0) {
             $data['start'] = $request->get('start');
@@ -37,19 +39,19 @@ class RoomController extends Controller
             $to = date($request->get('end') . ' 23:59:00');
             $list_rooms = $list_rooms->whereBetween('created_at', [$from, $to]);
         }
-        if ($request->has('hotel_id') && $request->get('hotel_id') != 0){
-            $data['hotel_id'] =$request->get('hotel_id');
-            $list_rooms = $list_rooms->where('hotel_id','=',$request->get('hotel_id'));
+        if ($request->has('hotel_id') && $request->get('hotel_id') != 0) {
+            $data['hotel_id'] = $request->get('hotel_id');
+            $list_rooms = $list_rooms->where('hotel_id', '=', $request->get('hotel_id'));
         }
-        if ($request->has('type_id') && $request->get('type_id') != 0){
+        if ($request->has('type_id') && $request->get('type_id') != 0) {
             $data['type_id'] = $request->get('type_id');
-            $list_rooms = $list_rooms->where('room_type','=',$request->get('type_id'));
+            $list_rooms = $list_rooms->where('room_type', '=', $request->get('type_id'));
         }
 
         $data['list'] = $list_rooms
             ->where('status', '=', 1)
             ->whereHas('hotel', function ($q) {
-                $q->where('status',1);
+                $q->where('status', 1);
             })
             ->orderByDesc('created_at')
             ->paginate(10)->appends($request->only($request->get('keyword')));
@@ -69,14 +71,14 @@ class RoomController extends Controller
         $hotels = Hotel::all();
         $types = RoomType::all();
         return view('admin/form/form-room')
-            ->with('hotels',$hotels)
-            ->with('types',$types);
+            ->with('hotels', $hotels)
+            ->with('types', $types);
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(FormCreateRoom $request)
@@ -88,7 +90,7 @@ class RoomController extends Controller
         $obj->price = $request->get('price');
         $obj->description = $request->get('description');
         $obj->status = 1;
-        $obj->number_people  = $request->get('number_people');
+        $obj->number_people = $request->get('number_people');
         $obj->hotel_id = $request->get('hotel');
         $obj->room_type = $request->get('room_type');
 
@@ -105,7 +107,7 @@ class RoomController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
@@ -116,20 +118,20 @@ class RoomController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
     {
         $obj = Room::find($id);
-        return view('admin/form/edit/edit-room')->with('obj',$obj);
+        return view('admin/form/edit/edit-room')->with('obj', $obj);
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param \Illuminate\Http\Request $request
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -158,7 +160,7 @@ class RoomController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
@@ -166,9 +168,10 @@ class RoomController extends Controller
         //
     }
 
-    public function updateStatus($id){
+    public function updateStatus($id)
+    {
         $obj = Room::find($id);
-        if ($obj == null){
+        if ($obj == null) {
             return view('error/error-404');
         }
         $obj->status = 0;
@@ -182,10 +185,11 @@ class RoomController extends Controller
         return redirect('/admin/rooms');
     }
 
-    public function getRoomTypeByHotelId(Request $request){
+    public function getRoomTypeByHotelId(Request $request)
+    {
         $hotel = Hotel::find($request->get('hotelId'));
-        if($hotel == null){
-           return response()->json('Hotel is not found or has been deleted!', 404);
+        if ($hotel == null) {
+            return response()->json('Hotel is not found or has been deleted!', 404);
         }
         return $hotel->types_room;
     }

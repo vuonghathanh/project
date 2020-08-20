@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Booking;
 use App\BookingDetail;
+use App\Hotel;
 use Illuminate\Http\Request;
 
 class BookingController extends Controller
@@ -16,6 +17,8 @@ class BookingController extends Controller
     public function index(Request $request)
     {
         $data = array();
+        $data['hotel_id'] = 0;
+        $hotels = Hotel::all();
         $booking_list = Booking::query();
         if ($request->has('start') && strlen($request->get('start')) > 0 && $request->has('end') && strlen($request->get('end')) > 0) {
             $data['start'] = $request->get('start');
@@ -24,9 +27,14 @@ class BookingController extends Controller
             $to = date($request->get('end') . ' 23:59:00');
             $booking_list = $booking_list->whereBetween('created_at', [$from, $to]);
         }
+        if ($request->has('hotel_id') && $request->get('hotel_id') != 0){
+            $data['hotel_id'] = $request->get('hotel_id');
+            $booking_list = $booking_list->where('hotel_id','=',$request->get('hotel_id'));
+        }
         $data['list'] = $booking_list
             ->orderByDesc('created_at')
             ->paginate(10)->appends($request->only($request->get('keyword')));
+        $data['hotels'] = $hotels;
         return view('admin/list/list-booking')->with($data);
     }
 
@@ -116,7 +124,7 @@ class BookingController extends Controller
         if ($obj == null){
             return view('error/error-404');
         }
-        if ($obj->id == 1){
+        if ($obj->status == 1){
             return ;
         }else{
             $obj->status = -1;

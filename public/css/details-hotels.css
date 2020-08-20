@@ -432,3 +432,32 @@ nav {
 }
 
 
+.content {
+    margin-top: 100px;
+    position: relative;
+}
+
+.content > div {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.content .content_while {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: sans-serif
+}
+.comment-hotel {
+    margin-top: 70px;
+}
+.comment-hotel .col-12 h1:after {
+    position: absolute;
+    top: -20px;
+    bottom: 0;
+    left: 0;
+    width: 97%;
+    height: 2px;
+    content: '';
+    opacity: 1;
+    background: black;
+}

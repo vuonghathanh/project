@@ -5,8 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="csrf-token" content="{{ csrf_token() }}" />
-    <link rel="shortcut icon"  href="{{asset('image/logo2.png')}}">
+    <meta name="csrf-token" content="{{ csrf_token() }}"/>
+    <link rel="shortcut icon" href="{{asset('image/logo2.png')}}">
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
     <script src="{{asset('js/jquery-3.5.1.min.js')}}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -29,57 +29,63 @@
 <body>
 <div id="cover"></div>
 <nav>
-    {{--Header & menu--}}
-    <div class="container-fluid">
-        <div class="row">
-            <nav class=" nav-header col">
-                <div class="row">
-                    <div class="menu-logo " id="menu-logo">
-                        <div class="row">
-                            <div class="logo col-3">
-                                <a href="/"><img src="{{asset('image/logo1.png')}}" width="150px" style="margin-top: -20px" alt=""></a>
-                            </div>
-                            <div class=" menu col-9  " id="navbarSupportedContent">
-                                <ul>
-                                    <li>
-                                        <a href="/">Home</a>
-                                    </li>
-                                    <li class="nav-item"><a href="/hotels">Booking Hotel</a></li>
-                                    <li class="nav-item"><a href="/about-us">About</a></li>
-                                    <li class="nav-item"><a href="/contact">Contact-Us</a></li>
-                                    <li class="nav-item"><a href="/blogs">Blog</a></li>
-                                    <li class="nav-item"><a href="/q&a-policy">Q&A</a></li>
-                                    <li class="nav-item"><a href="/login"> <i class="fas fa-sign-in-alt"></i> Login</a></li>
-                                </ul>
+    @if(\Illuminate\Support\Facades\Session::get('username') == null)
+        {{--Header & menu--}}
+        <div class="container-fluid">
+            <div class="row">
+                <nav class=" nav-header col">
+                    <div class="row">
+                        <div class="menu-logo " id="menu-logo">
+                            <div class="row">
+                                <div class="logo col-2">
+                                    <a href="/"><img src="{{asset('image/logo1.png')}}" width="150px"
+                                                     style="margin-top: -20px;margin-left: 60px" alt=""></a>
+                                </div>
+                                <div class=" menu col-10  " id="navbarSupportedContent">
+                                    <ul>
+                                        <li>
+                                            <a href="/">Trang Chủ</a>
+                                        </li>
+                                        <li class="nav-item"><a href="/hotels">Đặt phòng</a></li>
+                                        <li class="nav-item"><a href="/blogs">Nhật kí</a></li>
+                                        <li class="nav-item"><a href="/contact">Liên hệ</a></li>
+                                        <li class="nav-item"><a href="/about-us">Về chúng tôi</a></li>
+                                        <li class="nav-item"><a href="/q&a">Hỏi & đáp</a></li>
+                                        <li class="nav-item"><a href="/policy">Chính sách</a></li>
+                                        <li class="nav-item"><a href="/login"></i> Đăng
+                                                nhập</a></li>
+                                        <li class="nav-item"><a href="/login#signup"></i>Đăng ký</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </div>
-    </div>
-    {{--End header & menu--}}
+        {{--End header & menu--}}
 </nav>
 @yield('content')
 {{-- Start request email --}}
 <nav>
     <div class="container-fluid request-email">
         <div class="row">
-            <div class="col-12" style="font-size: 30px">
-                Sign up and we will send you the best deals
-            </div>
             <div class="col-12">
                 <div class="row">
-                    <div class="col-3"></div>
-                    <form action="#" class="col-6 form-inline setting-form">
-                        <div class="form-group">
-                            <input type="email" required class="form-control none-border-radius size-form">
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-primary none-border-radius">Sign in</button>
-                        </div>
-                    </form>
-                    <div class="col-3"></div>
+                    <div class="col-3">
+
+                    </div>
+                    <div class="col-6">
+                        <a href="/create-blog">
+                            <button class="btn btn-primary" type="button"
+                                    style="font-size: 25px;border-radius: 20px;margin-top: 75px">
+                                Click vào đây nếu bạn muốn đăng thông tin về Phú Quốc.
+                            </button>
+                        </a>
+                    </div>
+                    <div class="col-3">
+
+                    </div>
                 </div>
             </div>
 
@@ -93,7 +99,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-3 padding-footer">
-                <img src="https://colorlib.com/preview/theme/adventure/img/logo.png" alt="">
+                <img src="{{asset('image/logo1.png')}}" width="150px" alt="">
                 <span>
                     <br>
                     <br>
@@ -115,32 +121,33 @@
             <div class="col-6 padding-footer">
                 <div class="row">
                     <div class="col-6">
-                        <span>
-                            Lorem ipsum dolor sit amet:
+                       <span>
+                            Chi Nhánh TP.HCM:
                             <br>
                             <br>
-                            Consectetur adipiscing elit.
+                            Đại Diện: Supper Star Team
                             <br>
-                             Duis aute irure dolor in reprehenderit in voluptate velit esse.
+                            Địa Chỉ:số 333, Quận 1, TP.HCM
                             <br>
-                            Sed ut perspiciatis unde.
+                            Điện Thoại: 098.777.088
                             <br>
-                            Sunt in culpa qui officia.
+                            Email: LuonLoPhuQuoc@gmail.com
+                            <br>
                         </span>
                     </div>
                     <div class="col-6">
                         <span>
-                            Lorem ipsum dolor sit amet
-                            <br><br>
-                            Quis nostrud exercitation ullamco labori.
+                            Chi Nhánh Đà Nẵng:
                             <br>
-                            Sunt in culpa qui officia deserunt mollit anim id est laborum.
                             <br>
-                            Excepteur sint occaecat cupidatat non proident
+                            Đại Diện: Supper Star Team
                             <br>
-                            Ut enim ad minim veniam.
+                            Địa Chỉ:số 324, đường Trần Bình, Đà Nẵng
                             <br>
-                            Quis autem vel eum iure reprehenderit qui in ea voluptate.
+                            Điện Thoại: 098.777.066
+                            <br>
+                            Email: LuonLoPhuQuoc@gmail.com
+                            <br>
                         </span>
                     </div>
                 </div>
@@ -155,6 +162,143 @@
     </div>
 </nav>
 {{-- End footer --}}
+@else
+    {{--Header & menu--}}
+    <div class="container-fluid">
+        <div class="row">
+            <nav class=" nav-header col">
+                <div class="row">
+                    <div class="menu-logo " id="menu-logo">
+                        <div class="row">
+                            <div class="logo col-2">
+                                <a href="/"><img src="{{asset('image/logo1.png')}}" width="150px"
+                                                 style="margin-top: -20px;margin-left: 60px" alt=""></a>
+                            </div>
+                            <div class=" menu col-10  " id="navbarSupportedContent">
+                                <ul>
+                                    <li>
+                                        <a href="/">Trang Chủ</a>
+                                    </li>
+                                    <li class="nav-item"><a href="/hotels">Đặt phòng</a></li>
+                                    <li class="nav-item"><a href="/blogs">Nhật kí</a></li>
+                                    <li class="nav-item"><a href="/contact">Liên hệ</a></li>
+                                    <li class="nav-item"><a href="/about-us">Về chúng tôi</a></li>
+                                    <li class="nav-item"><a href="/q&a">Hỏi & đáp</a></li>
+                                    <li class="nav-item"><a href="/policy">Chính sách</a></li>
+                                    <li class="nav-item">
+                                        <i data-toggle="dropdown" style="color: white;" class="fas fa-user-circle"></i>
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dd1">
+                                            <a class="dropdown-item" href="/logout-user" style="color: black">Logout</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    {{--End header & menu--}}
+    </nav>
+    @yield('content')
+    {{-- Start request email --}}
+    <nav>
+        <div class="container-fluid request-email">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-3">
+
+                        </div>
+                        <div class="col-6">
+                            <a href="/create-blog">
+                                <button class="btn btn-primary" type="button"
+                                        style="font-size: 25px;border-radius: 20px;margin-top: 75px">
+                                    Click vào đây nếu bạn muốn đăng thông tin về Phú Quốc.
+                                </button>
+                            </a>
+                        </div>
+                        <div class="col-3">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    {{-- End request email--}}
+
+    {{-- Start footer --}}
+    <nav class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3 padding-footer">
+                    <img src="{{asset('image/logo1.png')}}" width="150px" alt="">
+                    <span>
+                    <br>
+                    <br>
+                    Limited company: ....
+                    <br>
+                    Address: Number 8, Ton That Thuyet, My Dinh, Ha Noi.
+                    <br>
+                    Business code: 0129131231
+                    <br>
+                    Legal representation: Vuong Ha Thanh
+                    <br>
+                    Position: Leader
+                    <br><br>
+                    <a href="#"><i class="fab fa-skype" style="font-size: 20px"></i></a>
+                    <a href="#"><i class="fab fa-facebook-square" style="font-size: 20px"></i></a>
+                    <a href="#"><i class="fas fa-envelope-square" style="font-size: 20px"></i></a>
+                </span>
+                </div>
+                <div class="col-6 padding-footer">
+                    <div class="row">
+                        <div class="col-6">
+                       <span>
+                            Chi Nhánh TP.HCM:
+                            <br>
+                            <br>
+                            Đại Diện: Supper Star Team
+                            <br>
+                            Địa Chỉ:số 333, Quận 1, TP.HCM
+                            <br>
+                            Điện Thoại: 098.777.088
+                            <br>
+                            Email: LuonLoPhuQuoc@gmail.com
+                            <br>
+                        </span>
+                        </div>
+                        <div class="col-6">
+                        <span>
+                            Chi Nhánh Đà Nẵng:
+                            <br>
+                            <br>
+                            Đại Diện: Supper Star Team
+                            <br>
+                            Địa Chỉ:số 324, đường Trần Bình, Đà Nẵng
+                            <br>
+                            Điện Thoại: 098.777.066
+                            <br>
+                            Email: LuonLoPhuQuoc@gmail.com
+                            <br>
+                        </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8441.20308316047!2d105.77738200386956!3d21.02854408835086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454b3260b1a8b%3A0x862052392e3f478e!2zOCBUw7RuIFRo4bqldCBUaHV54bq_dCwgTeG7uSDEkMOsbmgsIFThu6sgTGnDqm0sIEjDoCBO4buZaSAxMDAwMCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1595773299548!5m2!1svi!2s"
+                        width="365px" height="100%" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false"
+                        tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </nav>
+@endif
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
         integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
         crossorigin="anonymous"></script>
@@ -166,5 +310,6 @@
 <script src="{{asset('js/toast/jquery.toast.min.js')}}"></script>
 @yield('script')
 <script src="{{asset('js/style-detail.js')}}"></script>
+
 </body>
 </html>

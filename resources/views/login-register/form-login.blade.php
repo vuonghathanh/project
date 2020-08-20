@@ -21,46 +21,55 @@
     <!-- Custom Theme Style -->
     <link href="{{asset('build/css/custom.min.css')}}" rel="stylesheet">
 </head>
-
-<body class="login">
+<style>
+    *{
+        font-family: sans-serif, Verdana !important;
+    }
+</style>
+<body class="login" style="background:white">
 <div>
     <a class="hiddenanchor" id="signup"></a>
     <a class="hiddenanchor" id="signin"></a>
 
     <div class="login_wrapper">
-        <div class="animate form login_form">
-            <section class="login_content">
-                <form method="post" action="/login" >
-                    @csrf
-                    <h1>Login Form</h1>
-                    <div>
-                        <input type="text" class="form-control" placeholder="Username" name="username" required="" />
-                    </div>
-                    <div>
-                        <input type="password" class="form-control" placeholder="Password" name="password" required="" />
-                    </div>
-                    <div>
-                        <input type="submit" class="btn btn-default submit" value="Log in">
-                    </div>
+           <div class="animate form login_form">
+               <section class="login_content">
+                   <div>
+                       <form method="post" action="/login" >
+                           @csrf
+                           <h1>Login Form</h1>
+                           <div>
+                               <input type="text" class="form-control" placeholder="Username" name="username" required="" />
+                           </div>
+                           <div>
+                               <input type="password" class="form-control" placeholder="Password" name="password" required="" />
+                           </div>
+                           <div>
+                               <input type="submit" class="btn btn-default submit" style="margin-left: 130px;color: silver" value="Log in">
+                           </div>
 
-                    <div class="clearfix"></div>
+                           <div class="clearfix"></div>
 
-                    <div class="separator">
-                        <p class="change_link">
-                            <a href="#signup" class="to_register"> Create Account </a>
-                        </p>
+                           <div class="separator">
+                               <p class="change_link">
+                                   <a href="#signup" class="to_register"> Create Account </a>
+                               </p>
+                               <p class="change_link">
+                                   <a href="/" class="to_register"> Trang chủ </a>
+                               </p>
+                               <div class="clearfix"></div>
+                               <br />
 
-                        <div class="clearfix"></div>
-                        <br />
-
-                        <div>
-                            <h1><i class="fa fa-paw"></i> Lượn Phú Quốc!</h1>
-                            <p>©2016 All Rights Reserved. Lượn Phú Quốc! is a Bootstrap 3 template. Privacy and Terms</p>
-                        </div>
-                    </div>
-                </form>
-            </section>
-        </div>
+                               <div>
+                                   <img src="{{asset('image/logo1.png')}}" width="150px" alt="" style="margin-bottom: 20px">
+                                   <p>©2020 All Rights Reserved. Lượn Phú Quốc</p>
+                               </div>
+                           </div>
+                       </form>
+                   </div>
+               </section>
+           </div>
+       </div>
 
         <div id="register" class="animate form registration_form">
             <section class="login_content">
@@ -118,7 +127,7 @@
                         <br />
 
                         <div>
-                            <h1><i class="fa fa-paw"></i>Lượn Phú Quốc!</h1>
+                            <img src="{{asset('image/logo1.png')}}" width="150px" alt="" >
                         </div>
                     </div>
                 </form>

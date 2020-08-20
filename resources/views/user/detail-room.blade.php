@@ -8,16 +8,16 @@
             <div class="row">
                 <div class="col-7">
                     <h1 class="name-hotel">
-                        {{$hotel->name}}
+                        {{$room->hotel->name}}
                     </h1>
                     <h5>
-                        {{$hotel->address}}
+                        {{$room->hotel->address}}
                     </h5>
                 </div>
                 <div class="col-5 star-hotel">
                     <div class="ml-star">
                         <span>
-                            @for($i=0;$i<$hotel->star;$i++)
+                            @for($i=0;$i<$room->hotel->star;$i++)
                                 <i class="fas fa-star size-color-icon"></i>
                             @endfor
                         </span>
@@ -27,7 +27,7 @@
             <div class="row big-img">
                 <div class="col-12">
                     <div class="slider-for responsive">
-                        @foreach($hotel->large_photos as $photo)
+                        @foreach($room->large_photos as $photo)
                             <div class="item">
                                 <img src="{{$photo}}" height="500px"
                                      width="100%" alt="">
@@ -37,7 +37,7 @@
                 </div>
                 <div class="col-12 small-image">
                     <div class="slider-nav responsive">
-                        @foreach($hotel->large_photos as $photo)
+                        @foreach($room->large_photos as $photo)
                             <div class="item">
                                 <img src="{{$photo}}" width="100px"
                                      height="70px" alt="">
@@ -49,7 +49,7 @@
             <div class="row overview-rating">
                 <div class="col-7 overview">
                     <h2 style="font-weight: bold">Thông tin </h2>
-                    <p>{{$hotel->description}}</p>
+                    <p>{{$room->description}}</p>
                 </div>
                 <div class="col-5 rating">
                     <h2 style="font-weight: bold">Đánh giá</h2>
@@ -65,35 +65,25 @@
 
             <div class="row room-rates">
                 <div class="col-3">
-                    <h1>Tìm phòng</h1>
+                    <h1>Đặt phòng</h1>
                 </div>
-                <div class="col-9" >
+                <div class="col-9">
                     <div class="row">
-                        <form action="/hotels/{{$hotel->id}}" method="get" style="margin-top: 10px">
-                            <div class="row">
-                                <div class="form-group date">
-                                    <input type="text" name="dates" class="form-control"/>
-                                    <input type="hidden" name="start">
-                                    <input type="hidden" name="end">
-                                </div>
-                                <div class="form-group" style="margin-left: 5px">
-                                    <input class="form-control" type="number" name="number_people" min="1" required placeholder="nhập số người ">
-                                </div>
-                                <div class="form-group submit-rq" style="margin-left: 5px">
-                                    <button type="submit" class="btn btn-warning">
-                                        <i class="fa fa-search" aria-hidden="true"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                        <button type="button" class="btn btn-primary booked" data-toggle="modal" data-target="#exampleModalCenter">
-                            <a href="/check-out" id="show-booked" style="color: white;text-decoration: none">
-                                Đã đặt trước
-                            </a>
-                        </button>
+                        <div class="col">
+                            <button  class="btn btn-warning add-card" data-id="{{$room->id}}" style="margin-top: 7px;margin-left:0px">Đặt</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-primary booked" data-toggle="modal"
+                                    data-target="#exampleModalCenter" style="margin-left: 200px">
+                                <a href="/check-out" id="show-booked" style="color: white;text-decoration: none">
+                                    Đã đặt trước
+                                </a>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!--  -->
             <div class="row" style="margin-top: 50px">
                 <table class="table table-hover">
                     <thead>
@@ -105,33 +95,35 @@
                     </tr>
                     </thead>
                     <session>
-                    <tbody>
-                    @foreach($rooms as $room)
-                        <tr>
-                            <td scope="row">{{$room->number_people}}</td>
-                            <td>
-                                @foreach($room->small_photos as $photo)
-                                    <a href="{{$photo}}" data-lightbox="roadtrip-{{$room->id}}">
-                                        <img src="{{$photo}}" width="100px" alt="">
-                                    </a>
-                                @endforeach
-                            </td>
+                        <tbody>
 
-                            <td><span class="money"> {{$room->priceFormat}} </span></td>
-                            <td>
-                                <button class="btn btn-warning add-card" data-id="{{$room->id}}">
-                                    Đặt
-                                </button>
-                            </td>
-                        </tr>
-                    @endforeach
-                    </tbody>
+{{--                        @foreach($rooms as $room)--}}
+{{--                            <tr>--}}
+{{--                                <td scope="row">{{$room->number_people}}</td>--}}
+{{--                                <td>--}}
+{{--                                    @foreach($room->small_photos as $photo)--}}
+{{--                                        <a href="{{$photo}}" data-lightbox="roadtrip-{{$room->id}}">--}}
+{{--                                            <img src="{{$photo}}" width="100px" alt="">--}}
+{{--                                        </a>--}}
+{{--                                    @endforeach--}}
+{{--                                </td>--}}
+
+{{--                                <td><span class="money"> {{$room->priceFormat}} </span></td>--}}
+{{--                                <td>--}}
+{{--                                    <button class="btn btn-warning add-card" data-id="{{$room->id}}">--}}
+{{--                                        Đặt--}}
+{{--                                    </button>--}}
+{{--                                </td>--}}
+{{--                            </tr>--}}
+{{--                        @endforeach--}}
+                        </tbody>
                     </session>
                 </table>
             </div>
+            <!--  -->
             <div class="row" style="text-align: center;font-size: 13px">
                 <nav aria-label="Page navigation example" class="float-right">
-                    {{$rooms->links()}}
+{{--                    {{$rooms->links()}}--}}
                 </nav>
                 <div class="col-12">
                     <p style="text-align: center">Giá tính theo 1 phòng / đêm đã bao gồm thuế và phí</p>
@@ -241,8 +233,11 @@
                     <div class="col-12">
                         <div>
                             <div id="fb-root"></div>
-                            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v8.0&appId=332304524612479&autoLogAppEvents=1" nonce="s3nxZ4jY"></script>
-                            <div class="fb-comments" data-href="{{Request::url()}}" data-numposts="5" data-width="1000"></div>
+                            <script async defer crossorigin="anonymous"
+                                    src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v8.0&appId=332304524612479&autoLogAppEvents=1"
+                                    nonce="s3nxZ4jY"></script>
+                            <div class="fb-comments" data-href="{{Request::url()}}" data-numposts="5"
+                                 data-width="1000"></div>
                         </div>
                     </div>
                 </div>
@@ -252,48 +247,48 @@
 @endsection
 @section('script')
     <script>
-        $(document).ready(function (){
+        $(document).ready(function () {
             $.ajaxSetup({
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 }
             });
 
-            $('.add-card').click(function (){
+            $('.add-card').click(function () {
                 var roomId = $(this).attr('data-id');
                 var startTime = url.searchParams.get("start");
                 var endTime = url.searchParams.get("end");
-                if (startTime === null || startTime.length == 0 || endTime === null || endTime.length == 0){
+                if (startTime === null || startTime.length === 0 || endTime === null || endTime.length === 0) {
                     alert('Vui lòng nhập ngày bắt đầu và kết thúc để đặt phòng');
                     return;
                 }
                 var arrayStartDate = startTime.split('-');
-                var startDate = new Date(arrayStartDate[0],arrayStartDate[1],arrayStartDate[2]);
+                var startDate = new Date(arrayStartDate[0], arrayStartDate[1], arrayStartDate[2]);
                 var arrayEndDate = endTime.split('-');
-                var endDate = new Date(arrayEndDate[0],arrayEndDate[1],arrayEndDate[2]);
+                var endDate = new Date(arrayEndDate[0], arrayEndDate[1], arrayEndDate[2]);
                 var oneDay = 24 * 60 * 60 * 1000;
                 var dateNumber = Math.round(Math.abs((startDate - endDate) / oneDay));
                 $.ajax({
                     'url': '/add',
-                    'method' : 'GET',
-                    'data' : {
-                        "roomId" : roomId,
-                        "startTime" : startTime,
-                        "endTime" : endTime,
-                        "dateNumber" : dateNumber
+                    'method': 'GET',
+                    'data': {
+                        "roomId": roomId,
+                        "startTime": startTime,
+                        "endTime": endTime,
+                        "dateNumber": dateNumber
                     },
-                    'success' :function (){
+                    'success': function () {
                         $.toast({
-                            text : ["<div style='font-weight: bold;font-size:13px'>Đã thêm phòng vào danh sách đặt!</div>"],
-                            showHideTransition : 'slide',  // It can be plain, fade or slide
-                            hideAfter : 1000,
-                            bgColor : '#00bfff',              // Background color for toast
-                            textColor : 'white',
-                            position : 'bottom-right'
+                            text: ["<div style='font-weight: bold;font-size:13px'>Đã thêm phòng vào danh sách đặt!</div>"],
+                            showHideTransition: 'slide',  // It can be plain, fade or slide
+                            hideAfter: 1000,
+                            bgColor: '#00bfff',              // Background color for toast
+                            textColor: 'white',
+                            position: 'bottom-right'
                         })
-                        setTimeout(function (){
+                        setTimeout(function () {
                             location.reload();
-                        },1000)
+                        }, 1000)
                     },
                     'error': function () {
                         alert('Thêm mới thất bại xin vui lòng thực hiện lại hoặc tải lại trang web');

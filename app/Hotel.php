@@ -24,6 +24,10 @@ class Hotel extends Model
         return $this->hasMany('App\Room', 'hotel_id', 'id');
     }
 
+    public function bookings(){
+        return $this->hasMany('App\Booking','hotel_id','id');
+    }
+
     public function types_room(){
         return $this->hasMany('App\RoomType','hotel_id','id');
     }

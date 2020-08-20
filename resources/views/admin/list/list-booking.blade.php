@@ -23,20 +23,38 @@
                 <div class="x_content">
                     <div class="row">
                         <div class="col-sm-12">
-                            <div class="title_right">
-                                <form action="/admin/bookings" method="get" id="filter_form">
-                                    @csrf
-                                    <div class="row">
-                                        <div class="col-md-3">
+                            <div class="row">
+                                <div class="title_right">
+                                    <form action="/admin/bookings" method="get" id="filter_form">
+                                        @csrf
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlSelect1">Search by time</label>
+                                                    <input type="text" name="dates" class="form-control">
+                                                    <input type="hidden" name="start">
+                                                    <input type="hidden" name="end">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="title_right">
+                                    <form action="/admin/bookings" method="get" id="filter_form2">
+                                        <div class="col-md-12">
                                             <div class="form-group">
-                                                <label for="exampleFormControlSelect1">Search by time</label>
-                                                <input type="text" name="dates" class="form-control">
-                                                <input type="hidden" name="start">
-                                                <input type="hidden" name="end">
+                                                <label for="exampleFormControlSelect1">Search by hotel</label>
+                                                <select name="hotel_id" class="form-control" id="hotel_select">
+                                                    <option value="0">All</option>
+                                                    @foreach($hotels as $cate)
+                                                        <option value="{{$cate->id}}" {{$cate->id == $hotel_id ? 'selected':''}}>{{$cate->name}}</option>
+                                                    @endforeach
+                                                </select>
                                             </div>
                                         </div>
-                                    </div>
-                                </form>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -62,6 +80,7 @@
                                             <th>First name</th>
                                             <th>Last name</th>
                                             <th>Email</th>
+                                            <th>Hotel</th>
                                             <th>Created At</th>
                                             <th>Updated At</th>
                                             <th>Status</th>
@@ -76,12 +95,13 @@
                                         @foreach($list as $obj)
                                             <tr>
                                                 <td>{{$obj->id}}</td>
-                                                <td>{{$obj->total_price}}</td>
+                                                <td>{{\App\Utility::formatMoney($obj->total_price)}}</td>
                                                 <td>{{ $obj->payment_type }}</td>
                                                 <td>{{$obj->account->username}}</td>
                                                 <td>{{$obj->first_name}}</td>
                                                 <td>{{$obj->last_name}}</td>
                                                 <td>{{$obj->email}}</td>
+                                                <td>{{$obj->hotel->name}}</td>
                                                 <td>{{$obj->created_at}}</td>
                                                 <td>{{$obj->updated_at}}</td>
                                                 <td>{!! $obj->status_string !!}</td>
@@ -112,7 +132,14 @@
     </div>
 @endsection
 @section('script')
+    <script>
+        $('#hotel_select').change(function (){
+            $('#filter_form2').submit();
+
+        })
+    </script>
     <script src="{{asset('js/daterangepicker/daterangepicker.js')}}"></script>
     <script src="{{asset('js/booking/cancel.js')}}"></script>
     <script src="{{asset('js/booking/confirm.js')}}"></script>
+
 @endsection
