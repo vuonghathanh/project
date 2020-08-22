@@ -26,9 +26,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Trang',
                 'email' => 'trangtran@gmail.com',
                 'hotel_id' => 1,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-1)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-1)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 2,
                 'total_price' => 18180000,
                 'payment_type' => 'paypal',
@@ -38,9 +39,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Huy',
                 'email' => 'hoanghuy@gmail.com',
                 'hotel_id' => 1,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-4)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-4)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 3,
                 'total_price' => 12120000,
                 'payment_type' => 'paypal',
@@ -50,9 +52,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Thanh',
                 'email' => 'hathanh@gmail.com',
                 'hotel_id' => 1,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-9)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-9)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 4,
                 'total_price' => 32775000,
                 'payment_type' => 'paypal',
@@ -62,9 +65,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Manh',
                 'email' => 'congmanh@gmail.com',
                 'hotel_id' => 1,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-13)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-13)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 5,
                 'total_price' => 19665000,
                 'payment_type' => 'paypal',
@@ -74,9 +78,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Tuan',
                 'email' => 'haituan@gmail.com',
                 'hotel_id' => 1,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-19)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-19)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 6,
                 'total_price' => 7072500,
                 'payment_type' => 'paypal',
@@ -86,9 +91,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Tuan',
                 'email' => 'haituan@gmail.com',
                 'hotel_id' => 1,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-5)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-5)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 7,
                 'total_price' => 14145000,
                 'payment_type' => 'paypal',
@@ -98,9 +104,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Manh',
                 'email' => 'congmanh@gmail.com',
                 'hotel_id' => 1,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(5)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(5)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 8,
                 'total_price' => 16170000,
                 'payment_type' => 'paypal',
@@ -110,9 +117,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Thanh',
                 'email' => 'hathanh@gmail.com',
                 'hotel_id' => 1,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(2)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(2)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 9,
                 'total_price' => 8085000,
                 'payment_type' => 'paypal',
@@ -122,9 +130,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Huy',
                 'email' => 'hoanghuy@gmail.com',
                 'hotel_id' => 1,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-1)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-1)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 10,
                 'total_price' => 32472832,
                 'payment_type' => 'paypal',
@@ -134,9 +143,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Trang',
                 'email' => 'trantrang@gmail.com',
                 'hotel_id' => 1,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-3)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-3)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 11,
                 'total_price' => 8106958,
                 'payment_type' => 'paypal',
@@ -146,9 +156,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Huy',
                 'email' => 'hoanghuy@gmail.com',
                 'hotel_id' => 1,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-8)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-8)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 12,
                 'total_price' => 40440000,
                 'payment_type' => 'paypal',
@@ -158,9 +169,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Thanh',
                 'email' => 'hathanh@gmail.com',
                 'hotel_id' => 1,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-10)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-10)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 13,
                 'total_price' => 11144589,
                 'payment_type' => 'paypal',
@@ -170,9 +182,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Manh',
                 'email' => 'congmanh@gmail.com',
                 'hotel_id' => 1,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-15)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-15)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 14,
                 'total_price' => 64279140,
                 'payment_type' => 'paypal',
@@ -182,9 +195,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Tuan',
                 'email' => 'haituan@gmail.com',
                 'hotel_id' => 1,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-16)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-16)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 15,
                 'total_price' => 38505000,
                 'payment_type' => 'paypal',
@@ -194,9 +208,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Trang',
                 'email' => 'trantrang@gmail.com',
                 'hotel_id' => 1,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(10)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(10)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 16,
                 'total_price' => 484302000,
                 'payment_type' => 'paypal',
@@ -206,9 +221,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Thanh',
                 'email' => 'hathanh@gmail.com',
                 'hotel_id' => 1,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(8)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(8)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 17,
                 'total_price' => 69186000,
                 'payment_type' => 'paypal',
@@ -218,9 +234,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Manh',
                 'email' => 'congmanh@gmail.com',
                 'hotel_id' => 1,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-1)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-1)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 18,
                 'total_price' => 33181270,
                 'payment_type' => 'paypal',
@@ -230,9 +247,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Tuan',
                 'email' => 'haituan@gmail.com',
                 'hotel_id' => 1,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-3)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-3)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 19,
                 'total_price' => 5850395,
                 'payment_type' => 'paypal',
@@ -242,9 +260,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Trang',
                 'email' => 'trantrang@gmail.com',
                 'hotel_id' => 1,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-9)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-9)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 20,
                 'total_price' => 11864934,
                 'payment_type' => 'paypal',
@@ -254,9 +273,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Huy',
                 'email' => 'hoanghuy@gmail.com',
                 'hotel_id' => 1,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-11)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-11)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 21,
                 'total_price' => 3036375,
                 'payment_type' => 'paypal',
@@ -266,9 +286,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Manh',
                 'email' => 'congmanh@gmail.com',
                 'hotel_id' => 1,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-14)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-14)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 22,
                 'total_price' => 692539,
                 'payment_type' => 'paypal',
@@ -278,9 +299,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Tuan',
                 'email' => 'haituan@gmail.com',
                 'hotel_id' => 1,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(9)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(9)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 23,
                 'total_price' => 4577920,
                 'payment_type' => 'paypal',
@@ -290,9 +312,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Trang',
                 'email' => 'trantrang@gmail.com',
                 'hotel_id' => 1,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(7)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(7)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 24,
                 'total_price' => 10909090,
                 'payment_type' => 'paypal',
@@ -302,9 +325,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Huy',
                 'email' => 'hoanghuy@gmail.com',
                 'hotel_id' => 1,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(1)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(1)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 25,
                 'total_price' => 11465440,
                 'payment_type' => 'paypal',
@@ -314,9 +338,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Thanh',
                 'email' => 'hathanh@gmail.com',
                 'hotel_id' => 1,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-9)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-9)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 26,
                 'total_price' => 1186665,
                 'payment_type' => 'paypal',
@@ -326,9 +351,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Manh',
                 'email' => 'congmanh@gmail.com',
                 'hotel_id' => 1,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(10)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(10)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 27,
                 'total_price' => 2474026,
                 'payment_type' => 'paypal',
@@ -338,9 +364,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Tuan',
                 'email' => 'haituan@gmail.com',
                 'hotel_id' => 1,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(8)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(8)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 28,
                 'total_price' => 5665830,
                 'payment_type' => 'paypal',
@@ -350,9 +377,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Tuan',
                 'email' => 'haituan@gmail.com',
                 'hotel_id' => 1,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(5)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(5)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 29,
                 'total_price' => 5665830,
                 'payment_type' => 'paypal',
@@ -362,9 +390,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Manh',
                 'email' => 'congmanh@gmail.com',
                 'hotel_id' => 1,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-1)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-1)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 30,
                 'total_price' => 8029795,
                 'payment_type' => 'paypal',
@@ -374,9 +403,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Thanh',
                 'email' => 'hathanh@gmail.com',
                 'hotel_id' => 1,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-7)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-7)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 31,
                 'total_price' => 1838175,
                 'payment_type' => 'paypal',
@@ -386,9 +416,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Huy',
                 'email' => 'hoanghuy@gmail.com',
                 'hotel_id' => 2,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-13)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-13)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 32,
                 'total_price' => 9190875,
                 'payment_type' => 'paypal',
@@ -398,9 +429,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Trang',
                 'email' => 'trantrang@gmail.com',
                 'hotel_id' => 2,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-14)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-14)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 33,
                 'total_price' => 14824000,
                 'payment_type' => 'paypal',
@@ -410,9 +442,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Tuan',
                 'email' => 'haituan@gmail.com',
                 'hotel_id' => 2,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(9)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(9)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 34,
                 'total_price' => 3918920,
                 'payment_type' => 'paypal',
@@ -422,9 +455,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Manh',
                 'email' => 'congmanh@gmail.com',
                 'hotel_id' => 2,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(3)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(3)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 35,
                 'total_price' => 10130795,
                 'payment_type' => 'paypal',
@@ -434,9 +468,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Thanh',
                 'email' => 'hathanh@gmail.com',
                 'hotel_id' => 2,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(0)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(0)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 36,
                 'total_price' => 6078477,
                 'payment_type' => 'paypal',
@@ -446,9 +481,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Huy',
                 'email' => 'hoanghuy@gmail.com',
                 'hotel_id' => 2,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-6)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-6)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 37,
                 'total_price' => 19439640,
                 'payment_type' => 'paypal',
@@ -458,9 +494,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Trang',
                 'email' => 'trantrang@gmail.com',
                 'hotel_id' => 2,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-10)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-10)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 38,
                 'total_price' => 4319920,
                 'payment_type' => 'paypal',
@@ -470,9 +507,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Huy',
                 'email' => 'hoanghuy@gmail.com',
                 'hotel_id' => 2,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(9)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(9)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 39,
                 'total_price' => 24034632,
                 'payment_type' => 'paypal',
@@ -482,9 +520,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Manh',
                 'email' => 'congmanh@gmail.com',
                 'hotel_id' => 2,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(6)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(6)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 40,
                 'total_price' => 11144589,
                 'payment_type' => 'paypal',
@@ -494,9 +533,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Thanh',
                 'email' => 'hathanh@gmail.com',
                 'hotel_id' => 2,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(3)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(3)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 41,
                 'total_price' => 42107865,
                 'payment_type' => 'paypal',
@@ -506,9 +546,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Trang',
                 'email' => 'trantrang@gmail.com',
                 'hotel_id' => 2,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(1)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(1)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 42,
                 'total_price' => 30791800,
                 'payment_type' => 'paypal',
@@ -518,9 +559,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Tuan',
                 'email' => 'haituan@gmail.com',
                 'hotel_id' => 2,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-5)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-5)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 43,
                 'total_price' => 6636254,
                 'payment_type' => 'paypal',
@@ -530,9 +572,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Huy',
                 'email' => 'hoanghuy@gmail.com',
                 'hotel_id' => 2,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-10)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-10)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 44,
                 'total_price' => 29251975,
                 'payment_type' => 'paypal',
@@ -542,9 +585,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Thanh',
                 'email' => 'hathanh@gmail.com',
                 'hotel_id' => 2,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-13)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-13)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 45,
                 'total_price' => 48069264,
                 'payment_type' => 'paypal',
@@ -554,9 +598,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Manh',
                 'email' => 'congmanh@gmail.com',
                 'hotel_id' => 2,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(10)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(10)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 46,
                 'total_price' => 5213060,
                 'payment_type' => 'paypal',
@@ -566,9 +611,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Trang',
                 'email' => 'trantrang@gmail.com',
                 'hotel_id' => 2,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(5)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(5)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 47,
                 'total_price' => 5234636,
                 'payment_type' => 'paypal',
@@ -578,9 +624,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Huy',
                 'email' => 'hoanghuy@gmail.com',
                 'hotel_id' => 2,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(3)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(3)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 48,
                 'total_price' => 12743080,
                 'payment_type' => 'paypal',
@@ -590,9 +637,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Thanh',
                 'email' => 'hathanh@gmail.com',
                 'hotel_id' => 2,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(1)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(1)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 49,
                 'total_price' => 31989560,
                 'payment_type' => 'paypal',
@@ -602,9 +650,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Tuan',
                 'email' => 'haituan@gmail.com',
                 'hotel_id' => 2,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-2)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-2)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 50,
                 'total_price' => 7606400,
                 'payment_type' => 'paypal',
@@ -614,9 +663,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Manh',
                 'email' => 'congmanh@gmail.com',
                 'hotel_id' => 2,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(10)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(10)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 51,
                 'total_price' => 3803200,
                 'payment_type' => 'paypal',
@@ -626,9 +676,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Huy',
                 'email' => 'hoanghuy@gmail.com',
                 'hotel_id' => 2,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(5)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(5)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 52,
                 'total_price' => 2833600,
                 'payment_type' => 'paypal',
@@ -638,9 +689,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Trang',
                 'email' => 'trantrang@gmail.com',
                 'hotel_id' => 3,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(2)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(2)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 53,
                 'total_price' => 4065600,
                 'payment_type' => 'paypal',
@@ -650,9 +702,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Thanh',
                 'email' => 'hathanh@gmail.com',
                 'hotel_id' => 2,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(1)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(1)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 54,
                 'total_price' => 4449774,
                 'payment_type' => 'paypal',
@@ -662,9 +715,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Manh',
                 'email' => 'congmanh@gmail.com',
                 'hotel_id' => 2,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-1)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-1)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 55,
                 'total_price' => 8109357,
                 'payment_type' => 'paypal',
@@ -674,9 +728,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Tuan',
                 'email' => 'haituan@gmail.com',
                 'hotel_id' => 2,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-3)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-3)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 56,
                 'total_price' => 10110000,
                 'payment_type' => 'paypal',
@@ -686,9 +741,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Trang',
                 'email' => 'trantrang@gmail.com',
                 'hotel_id' => 3,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-6)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-6)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 57,
                 'total_price' => 5667200,
                 'payment_type' => 'paypal',
@@ -698,9 +754,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Huy',
                 'email' => 'hoanghuy@gmail.com',
                 'hotel_id' => 2,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-7)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-7)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 58,
                 'total_price' => 2964800,
                 'payment_type' => 'paypal',
@@ -710,9 +767,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Thanh',
                 'email' => 'hathanh@gmail.com',
                 'hotel_id' => 2,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-9)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-9)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 59,
                 'total_price' => 3156887,
                 'payment_type' => 'paypal',
@@ -722,9 +780,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Manh',
                 'email' => 'congmanh@gmail.com',
                 'hotel_id' => 2,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-10)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-10)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 60,
                 'total_price' => 7068554,
                 'payment_type' => 'paypal',
@@ -734,9 +793,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Tuan',
                 'email' => 'haituan@gmail.com',
                 'hotel_id' => 2,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-12)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-12)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 61,
                 'total_price' => 607275,
                 'payment_type' => 'paypal',
@@ -746,9 +806,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Huy',
                 'email' => 'hoanghuy@gmail.com',
                 'hotel_id' => 3,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-14)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-14)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 62,
                 'total_price' => 3462695,
                 'payment_type' => 'paypal',
@@ -758,9 +819,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Manh',
                 'email' => 'congmanh@gmail.com',
                 'hotel_id' => 3,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-15)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-15)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 63,
                 'total_price' => 1831168,
                 'payment_type' => 'paypal',
@@ -770,9 +832,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Thanh',
                 'email' => 'hathanh@gmail.com',
                 'hotel_id' => 3,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(9)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(9)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 64,
                 'total_price' => 1090909,
                 'payment_type' => 'paypal',
@@ -782,9 +845,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Trang',
                 'email' => 'trantrang@gmail.com',
                 'hotel_id' => 3,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(6)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(6)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 65,
                 'total_price' => 2293088,
                 'payment_type' => 'paypal',
@@ -794,9 +858,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Tuan',
                 'email' => 'haituan@gmail.com',
                 'hotel_id' => 3,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(4)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(4)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 66,
                 'total_price' => 2373330,
                 'payment_type' => 'paypal',
@@ -806,9 +871,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Thanh',
                 'email' => 'hathanh@gmaill.com',
                 'hotel_id' => 3,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(1)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(1)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 67,
                 'total_price' => 1237013,
                 'payment_type' => 'paypal',
@@ -818,9 +884,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Tuan',
                 'email' => 'haituan@gmail.com',
                 'hotel_id' => 3,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-1)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-1)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 68,
                 'total_price' => 8085000,
                 'payment_type' => 'paypal',
@@ -830,9 +897,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Manh',
                 'email' => 'congmanh@gmail.com',
                 'hotel_id' => 3,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-3)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-3)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 69,
                 'total_price' => 3156887,
                 'payment_type' => 'paypal',
@@ -842,9 +910,10 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Trang',
                 'email' => 'trantrang@gmail.com',
                 'hotel_id' => 3,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-4)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-4)->format('Y-m-d H:i:s'),
-            ],[
+            ], [
                 'id' => 70,
                 'total_price' => 7697950,
                 'payment_type' => 'paypal',
@@ -854,6 +923,7 @@ class BookingSeeder extends Seeder
                 'last_name' => 'Huy',
                 'email' => 'hoanghuy@gmail.com',
                 'hotel_id' => 3,
+                'phone' => '0377096593',
                 'created_at' => \Carbon\Carbon::now()->addDays(-5)->format('Y-m-d H:i:s'),
                 'updated_at' => \Carbon\Carbon::now()->addDays(-5)->format('Y-m-d H:i:s'),
             ]

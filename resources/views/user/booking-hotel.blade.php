@@ -104,7 +104,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12" style="font-size: 30px;text-align: center;margin-bottom: 50px">
-                        <span >Các phòng còn trống từ ngày: <span style="font-weight: bold;">{{\Illuminate\Support\Facades\Session::get('start')}}</span> đến ngày: <span style="font-weight: bold;">{{\Illuminate\Support\Facades\Session::get('start')}}</span>, số người: <span style="font-weight: bold;">{{\Illuminate\Support\Facades\Session::get('number_people')}}</span>
+                        <span >Các phòng còn trống từ ngày: <span style="font-weight: bold;">{{\Illuminate\Support\Facades\Session::get('start')}}</span> đến ngày: <span style="font-weight: bold;">{{\Illuminate\Support\Facades\Session::get('start')}}</span>, số người: <span style="font-weight: bold;">{{\Illuminate\Support\Facades\Session::get('number_people')}}
                     </div>
                     <div class="col-3 lef-content">
                         <div class="row">

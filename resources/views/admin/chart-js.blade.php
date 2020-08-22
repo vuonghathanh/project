@@ -3,178 +3,252 @@
     <div class="">
         <div class="page-title">
             <div class="title_left">
-                <h3>Chart Js <small>Some examples to get you started</small></h3>
-            </div>
-
-            <div class="title_right">
-                <div class="col-md-5 col-sm-5   form-group pull-right top_search">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search for...">
-                        <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">Go!</button>
-                    </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="clearfix"></div>
-
-        <div class="row">
-            <div class="col-md-6 col-sm-6  ">
-                <div class="x_panel">
-                    <div class="x_title">
-                        <h2>Line graph<small>Sessions</small></h2>
-                        <ul class="nav navbar-right panel_toolbox">
-                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Settings 1</a>
-                                    <a class="dropdown-item" href="#">Settings 2</a>
-                                </div>
-                            </li>
-                            <li><a class="close-link"><i class="fa fa-close"></i></a>
-                            </li>
-                        </ul>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="x_content">
-                        <canvas id="lineChart"></canvas>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-sm-6  ">
-                <div class="x_panel">
-                    <div class="x_title">
-                        <h2>Bar graph <small>Sessions</small></h2>
-                        <ul class="nav navbar-right panel_toolbox">
-                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Settings 1</a>
-                                    <a class="dropdown-item" href="#">Settings 2</a>
-                                </div>
-                            </li>
-                            <li><a class="close-link"><i class="fa fa-close"></i></a>
-                            </li>
-                        </ul>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="x_content">
-                        <canvas id="mybarChart"></canvas>
-                    </div>
-                </div>
+                <h3>Thống kê: <small>Doanh thu của các khách sạn theo thời gian</small></h3>
             </div>
         </div>
         <div class="clearfix"></div>
         <div class="row">
-            <div class="col-md-6 col-sm-6  ">
+            <div class="col-md-12 col-sm-12  ">
                 <div class="x_panel">
                     <div class="x_title">
-                        <h2>Radar <small>Sessions</small></h2>
+                        <h2>Marriott Phú Quốc Emerald Bay Resort & Spa</h2>
                         <ul class="nav navbar-right panel_toolbox">
                             <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Settings 1</a>
-                                    <a class="dropdown-item" href="#">Settings 2</a>
-                                </div>
-                            </li>
-                            <li><a class="close-link"><i class="fa fa-close"></i></a>
                             </li>
                         </ul>
                         <div class="clearfix"></div>
                     </div>
                     <div class="x_content">
-                        <canvas id="canvasRadar"></canvas>
+                        {!! $chart->container() !!}
                     </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-sm-6  ">
-                <div class="x_panel">
-                    <div class="x_title">
-                        <h2>Donut Graph <small>Sessions</small></h2>
-                        <ul class="nav navbar-right panel_toolbox">
-                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Settings 1</a>
-                                    <a class="dropdown-item" href="#">Settings 2</a>
-                                </div>
-                            </li>
-                            <li><a class="close-link"><i class="fa fa-close"></i></a>
-                            </li>
-                        </ul>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="x_content">
-                        <canvas id="canvasDoughnut"></canvas>
+                    <div style="padding-top: 500px">
+                        <span>
+                            <h3>Tổng doanh thu: {{\App\Utility::formatMoney($total_price)}}</h3>
+                            <h4>Doanh thu được nhận: {{\App\Utility::formatMoney($total_price * 0.1)}}</h4>
+                        </span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="clearfix"></div>
         <div class="row">
-            <div class="col-md-6 col-sm-6  ">
+            <div class="col-md-12 col-sm-12  ">
                 <div class="x_panel">
                     <div class="x_title">
-                        <h2>Pie Graph Chart <small>Sessions</small></h2>
+                        <h2>Vinpearl Resort & Spa Phu Quoc</h2>
                         <ul class="nav navbar-right panel_toolbox">
                             <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Settings 1</a>
-                                    <a class="dropdown-item" href="#">Settings 2</a>
-                                </div>
-                            </li>
-                            <li><a class="close-link"><i class="fa fa-close"></i></a>
                             </li>
                         </ul>
                         <div class="clearfix"></div>
                     </div>
                     <div class="x_content">
-                        <canvas id="pieChart"></canvas>
+                        {!! $chart2->container() !!}
+                    </div>
+                    <div style="padding-top: 500px">
+                        <span>
+                            <h3>Tổng doanh thu: {{\App\Utility::formatMoney($total_price2)}}</h3>
+                            <h4>Doanh thu được nhận: {{\App\Utility::formatMoney($total_price2 * 0.1)}}</h4>
+                        </span>
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-6 col-sm-6  ">
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12  ">
                 <div class="x_panel">
                     <div class="x_title">
-                        <h2>Pie Area Graph <small>Sessions</small></h2>
+                        <h2>Praha Hotel</h2>
                         <ul class="nav navbar-right panel_toolbox">
                             <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Settings 1</a>
-                                    <a class="dropdown-item" href="#">Settings 2</a>
-                                </div>
-                            </li>
-                            <li><a class="close-link"><i class="fa fa-close"></i></a>
                             </li>
                         </ul>
                         <div class="clearfix"></div>
                     </div>
                     <div class="x_content">
-                        <canvas id="polarArea"></canvas>
+                        {!! $chart3->container() !!}
+                    </div>
+                    <div style="padding-top: 500px">
+                        <span>
+                            <h3>Tổng doanh thu: {{\App\Utility::formatMoney($total_price3)}}</h3>
+                            <h4>Doanh thu được nhận: {{\App\Utility::formatMoney($total_price3 * 0.1)}}</h4>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12  ">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>VinOasis Phu Quoc</h2>
+                        <ul class="nav navbar-right panel_toolbox">
+                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        {!! $chart4->container() !!}
+                    </div>
+                    <div style="padding-top: 500px">
+                        <span>
+                            <h3>Tổng doanh thu: {{\App\Utility::formatMoney($total_price4)}}</h3>
+                            <h4>Doanh thu được nhận: {{\App\Utility::formatMoney($total_price4 * 0.1)}}</h4>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12  ">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>Novotel Phu Quoc Resort</h2>
+                        <ul class="nav navbar-right panel_toolbox">
+                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        {!! $chart5->container() !!}
+                    </div>
+                    <div style="padding-top: 500px">
+                        <span>
+                            <h3>Tổng doanh thu: {{\App\Utility::formatMoney($total_price5)}}</h3>
+                            <h4>Doanh thu được nhận: {{\App\Utility::formatMoney($total_price5 * 0.1)}}</h4>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12  ">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>Sol Beach House Phu Quoc</h2>
+                        <ul class="nav navbar-right panel_toolbox">
+                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        {!! $chart6->container() !!}
+                    </div>
+                    <div style="padding-top: 500px">
+                        <span>
+                            <h3>Tổng doanh thu: {{\App\Utility::formatMoney($total_price6)}}</h3>
+                            <h4>Doanh thu được nhận: {{\App\Utility::formatMoney($total_price6 * 0.1)}}</h4>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12  ">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>Premier Residences Phu Quoc Emerald Bay</h2>
+                        <ul class="nav navbar-right panel_toolbox">
+                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        {!! $chart7->container() !!}
+                    </div>
+                    <div style="padding-top: 500px">
+                        <span>
+                            <h3>Tổng doanh thu: {{\App\Utility::formatMoney($total_price7)}}</h3>
+                            <h4>Doanh thu được nhận: {{\App\Utility::formatMoney($total_price7 * 0.1)}}</h4>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12  ">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>Best Western Premier Sonasea Phu Quoc Resort</h2>
+                        <ul class="nav navbar-right panel_toolbox">
+                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        {!! $chart8->container() !!}
+                    </div>
+                    <div style="padding-top: 500px">
+                        <span>
+                            <h3>Tổng doanh thu: {{\App\Utility::formatMoney($total_price8)}}</h3>
+                            <h4>Doanh thu được nhận: {{\App\Utility::formatMoney($total_price8 * 0.1)}}</h4>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12  ">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>Seashells Phu Quoc Hotel & Spa</h2>
+                        <ul class="nav navbar-right panel_toolbox">
+                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        {!! $chart9->container() !!}
+                    </div>
+                    <div style="padding-top: 500px">
+                        <span>
+                            <h3>Tổng doanh thu: {{\App\Utility::formatMoney($total_price9)}}</h3>
+                            <h4>Doanh thu được nhận: {{\App\Utility::formatMoney($total_price9 * 0.1)}}</h4>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12  ">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>Intercontinental Phu Quoc Long Beach Resort</h2>
+                        <ul class="nav navbar-right panel_toolbox">
+                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        {!! $chart10->container() !!}
+                    </div>
+                    <div style="padding-top: 500px">
+                        <span>
+                            <h3>Tổng doanh thu: {{\App\Utility::formatMoney($total_price10)}}</h3>
+                            <h4>Doanh thu được nhận: {{\App\Utility::formatMoney($total_price10 * 0.1)}}</h4>
+                        </span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- page content -->
+@endsection
+@section('script')
+    {!! $chart->script() !!}
+    {!! $chart2->script() !!}
+    {!! $chart3->script() !!}
+    {!! $chart4->script() !!}
+    {!! $chart5->script() !!}
+    {!! $chart6->script() !!}
+    {!! $chart7->script() !!}
+    {!! $chart8->script() !!}
+    {!! $chart9->script() !!}
+    {!! $chart10->script() !!}
 @endsection

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Account;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Session;
 
 class LoginController extends Controller
@@ -25,7 +26,7 @@ class LoginController extends Controller
         $request->getSession()->put('username',$existingAccount->username);
         $request->getSession()->put('role',$existingAccount->role);
         if ($existingAccount->role == 'admin'){
-            return redirect('/admin/hotels');
+            return redirect('/admin');
         }
         if ($existingAccount->role == 'user'){
             return redirect('/check-out');
@@ -34,7 +35,7 @@ class LoginController extends Controller
     public function logOutAdmin(){
         Session::remove('username');
         Session::remove('role');
-        return redirect('/login');
+        return redirect('/');
     }
     public function logOutUser(){
         Session::remove('username');

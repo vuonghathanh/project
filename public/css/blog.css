@@ -216,7 +216,10 @@
 
 }
 .new-blog .text-new-blog{
-    background-color: #f0f0f0;margin-left: -38px
+    background-color: #f0f0f0;
+    position: relative;
+    margin-left: -38px;
+    text-align: left;
 }
 .new-blog .text-new-blog a{
     color: black;

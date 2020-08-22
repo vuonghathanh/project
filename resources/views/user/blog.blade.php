@@ -17,20 +17,12 @@
                                 </a>
                             </div>
                             <div class="col-7 text-new-blog" >
-                                <a href="/blog/{{$blog->id}}"><h3 style="margin-top: 15px">{{$blog->title}}</h3></a>
-                                <p>{{$blog->description}}</p>
+                                <a href="/blog/{{$blog->id}}"><h3 style="margin-top: 15px;width: 100%">{{$blog->title}}</h3></a>
+                                <p style="width: 100%;height: 70px;overflow: hidden">{{$blog->description}}</p>
+                                <p>Ngày đăng: {{$blog->created_at}}</p>
+                                <p style="position: absolute;top:200px;right: 30px">{{$blog->author}}</p>
                             </div>
                         </div>
-{{--                        <a href="/blog/{{$blog->id}}">--}}
-{{--                            <div class="col-md-6">--}}
-{{--                                <div class="bl-og">--}}
-{{--                                    <img src="{{$blog->large_photo}}" alt="">--}}
-{{--                                    <div class="og-text">--}}
-{{--                                        <h4 style="font-size: 20px;font-family: sans-serif;margin-bottom: 140px">{{$blog->title}}</h4>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </a>--}}
                     @endforeach
                 </div>
 

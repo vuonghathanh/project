@@ -69,15 +69,10 @@
                 </div>
                 <div class="col-9">
                     <div class="row">
-                        <div class="col">
-                            <button  class="btn btn-warning add-card" data-id="{{$room->id}}" style="margin-top: 7px;margin-left:0px">Đặt</button>
-                        </div>
-                        <div class="col">
-                            <button type="button" class="btn btn-primary booked" data-toggle="modal"
-                                    data-target="#exampleModalCenter" style="margin-left: 200px">
-                                <a href="/check-out" id="show-booked" style="color: white;text-decoration: none">
-                                    Đã đặt trước
-                                </a>
+                        <div class="col-10"></div>
+                        <div class="col-2">
+                            <button class="btn btn-warning add-card" data-id="{{$room->id}}"
+                                    style="margin-top: 7px;margin-left:0px">Đặt
                             </button>
                         </div>
                     </div>
@@ -96,26 +91,25 @@
                     </thead>
                     <session>
                         <tbody>
+                        {{--                        @foreach($rooms as $room)--}}
+                        {{--                            <tr>--}}
+                        {{--                                <td scope="row">{{$room->number_people}}</td>--}}
+                        {{--                                <td>--}}
+                        {{--                                    @foreach($room->small_photos as $photo)--}}
+                        {{--                                        <a href="{{$photo}}" data-lightbox="roadtrip-{{$room->id}}">--}}
+                        {{--                                            <img src="{{$photo}}" width="100px" alt="">--}}
+                        {{--                                        </a>--}}
+                        {{--                                    @endforeach--}}
+                        {{--                                </td>--}}
 
-{{--                        @foreach($rooms as $room)--}}
-{{--                            <tr>--}}
-{{--                                <td scope="row">{{$room->number_people}}</td>--}}
-{{--                                <td>--}}
-{{--                                    @foreach($room->small_photos as $photo)--}}
-{{--                                        <a href="{{$photo}}" data-lightbox="roadtrip-{{$room->id}}">--}}
-{{--                                            <img src="{{$photo}}" width="100px" alt="">--}}
-{{--                                        </a>--}}
-{{--                                    @endforeach--}}
-{{--                                </td>--}}
-
-{{--                                <td><span class="money"> {{$room->priceFormat}} </span></td>--}}
-{{--                                <td>--}}
-{{--                                    <button class="btn btn-warning add-card" data-id="{{$room->id}}">--}}
-{{--                                        Đặt--}}
-{{--                                    </button>--}}
-{{--                                </td>--}}
-{{--                            </tr>--}}
-{{--                        @endforeach--}}
+                        {{--                                <td><span class="money"> {{$room->priceFormat}} </span></td>--}}
+                        {{--                                <td>--}}
+                        {{--                                    <button class="btn btn-warning add-card" data-id="{{$room->id}}">--}}
+                        {{--                                        Đặt--}}
+                        {{--                                    </button>--}}
+                        {{--                                </td>--}}
+                        {{--                            </tr>--}}
+                        {{--                        @endforeach--}}
                         </tbody>
                     </session>
                 </table>
@@ -123,7 +117,7 @@
             <!--  -->
             <div class="row" style="text-align: center;font-size: 13px">
                 <nav aria-label="Page navigation example" class="float-right">
-{{--                    {{$rooms->links()}}--}}
+                    {{--                    {{$rooms->links()}}--}}
                 </nav>
                 <div class="col-12">
                     <p style="text-align: center">Giá tính theo 1 phòng / đêm đã bao gồm thuế và phí</p>
@@ -269,7 +263,7 @@
                 var oneDay = 24 * 60 * 60 * 1000;
                 var dateNumber = Math.round(Math.abs((startDate - endDate) / oneDay));
                 $.ajax({
-                    'url': '/add',
+                    'url': '/add-one',
                     'method': 'GET',
                     'data': {
                         "roomId": roomId,
@@ -288,10 +282,12 @@
                         })
                         setTimeout(function () {
                             location.reload();
+                            window.location.href = "/check-out";
                         }, 1000)
                     },
                     'error': function () {
                         alert('Thêm mới thất bại xin vui lòng thực hiện lại hoặc tải lại trang web');
+
                     }
                 })
             })

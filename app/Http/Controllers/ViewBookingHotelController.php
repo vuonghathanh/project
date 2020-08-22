@@ -24,31 +24,32 @@ class ViewBookingHotelController extends Controller
         if ($request->has('start') && strlen($request->get('start')) > 0 && $request->has('end') && strlen($request->get('end'))) {
             $start = $request->get('start');
             $end = $request->get('end');
-            Session::put('start',$start);
-            Session::put('end',$end);
-            Session::put('number_people',$request->get('number_people'));
+            Session::put('start', $start);
+            Session::put('end', $end);
+            Session::put('number_people', $request->get('number_people'));
             $rooms = $rooms
                 ->whereNotIn('id',
                     BookingDetail::select('room_id')
-                    ->where(function ($query) use ($start,$end){
-                        $query->where([
-                            ['start_with','<',$start],
-                            ['end_with','<',$start]
-                        ])->orWhere([
-                            ['start_with','>',$start],
-                            ['end_with','>',$end]
-                        ]);
+                        ->where(function ($query) use ($start, $end) {
+                            $query->where([
+                                ['start_with', '<', $start],
+                                ['end_with', '<', $start]
+                            ])->orWhere([
+                                ['start_with', '>', $start],
+                                ['end_with', '>', $end]
+                            ]);
 
-                    }))
-                ->where('number_people','=',$request->get('number_people'))
+                        }))
+                ->where('number_people', '=', $request->get('number_people'))
                 ->paginate(7)->appends($request->only($request->get('keyword')));
-        }else{
+        } else {
             $rooms = null;
         }
         $data['hotels'] = $hotels;
         $data['rooms'] = $rooms;
         return view('user/booking-hotel')->with($data);
     }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -82,29 +83,29 @@ class ViewBookingHotelController extends Controller
         $data = array();
         $hotel = Hotel::find($id);
         $rooms = Hotel::query();
-        if ($request->has('start') && strlen($request->get('start')) > 0 && $request->has('end') && strlen($request->get('end'))) {
+        if ($request->has('start') && strlen($request->get('start')) > 0 && $request->has('end') && strlen($request->get('end')) && $request->has('number_people') && strlen($request->get('number_people'))) {
             $start = $request->get('start');
             $end = $request->get('end');
-            Session::put('start',$start);
-            Session::put('end',$end);
-            Session::put('number_people',$request->get('number_people'));
+            Session::put('start', $start);
+            Session::put('end', $end);
+            Session::put('number_people', $request->get('number_people'));
             $rooms = $rooms
                 ->find($id)
                 ->png_rooms()
                 ->whereNotIn('id', BookingDetail::select('room_id')
-                    ->where(function ($query) use ($start,$end){
-                    $query->where([
-                        ['start_with','<',$start],
-                        ['end_with','<',$start]
-                    ])->orWhere([
-                        ['start_with','>',$start],
-                        ['end_with','>',$end]
-                    ]);
+                    ->where(function ($query) use ($start, $end) {
+                        $query->where([
+                            ['start_with', '<', $start],
+                            ['end_with', '<', $start]
+                        ])->orWhere([
+                            ['start_with', '>', $start],
+                            ['end_with', '>', $end]
+                        ]);
 
-                }))->where('number_people','=',$request->get('number_people'))
+                    }))->where('number_people', '=', $request->get('number_people'))
                 ->paginate(7)->appends($request->only($request->get('keyword')));
 
-        }else{
+        } else {
             $rooms = $rooms->find($id)->png_rooms()->paginate(7)->appends($request->only($request->get('keyword')));
         }
         $data['hotel'] = $hotel;
@@ -149,12 +150,35 @@ class ViewBookingHotelController extends Controller
         //
     }
 
-    public function showView($id, Request $request)
+    public function showView(Request $request,$id)
     {
+        $data = array();
         $room = Room::find($id);
-
+//        $rooms = Room::query();
+//        if ($request->has('start') && strlen($request->get('start')) > 0 && $request->has('end') && strlen($request->get('end')) && $request->has('number_people') && strlen($request->get('number_people'))) {
+//            $start = $request->get('start');
+//            $end = $request->get('end');
+//            $numberPeople = $request->get('number_people');
+//            $rooms = $rooms
+//                ->find($id)
+//                ->hotel->rooms
+//                ->whereNotIn('id', BookingDetail::select('room_id')
+//                    ->where(function ($query) use ($start, $end) {
+//                        $query->where([
+//                            ['start_with', '<', $start],
+//                            ['end_with', '<', $start]
+//                        ])->orWhere([
+//                            ['start_with', '>', $start],
+//                            ['end_with', '>', $end]
+//                        ]);
+//
+//                    }))->where('number_people', '=', $numberPeople)
+//                ->paginate(7)->appends($request->only($request->get('keyword')));
+//        }
+        $data['room'] = $room;
+//        $data['rooms'] = $rooms;
         return view('user/detail-room')
-            ->with('room', $room);
+            ->with($data);
     }
 
     public function addCart(Request $request)
@@ -195,8 +219,51 @@ class ViewBookingHotelController extends Controller
             return;
         }
         $bookingCart[$room->id] = $bookingRoom;
-        Session::put('hotelId',$room->hotel->id);
+        Session::put('hotelId', $room->hotel->id);
         Session::put('bookingCart', $bookingCart);
+    }
+
+    public function addOneCart(Request $request)
+    {
+        $roomId = $request->get('roomId');
+        $startTime = $request->get('startTime');
+        $endTime = $request->get('endTime');
+        $dateNumber = $request->get('dateNumber');
+        $room = Room::find($roomId);
+        if ($room == null) {
+            return view('error/error-404');
+        }
+
+        $bookingCart = Session::get('bookingCart');
+        if ($bookingCart == null) {
+
+            $bookingCart = array();
+        }
+        $bookingRoom = null;
+        if (array_key_exists($room->id, $bookingCart)) {
+            $bookingRoom = $bookingCart[$room->id];
+        }
+        if ($bookingRoom == null) {
+            $bookingRoom = array(
+                'roomId' => $room->id,
+                'hotelName' => $room->hotel->name,
+                'hotelId' => $room->hotel->id,
+                'hotelStar' => $room->hotel->star,
+                'hotelAddress' => $room->hotel->address,
+                'hotelPhoto' => $room->hotel->large_photo,
+                'roomType' => $room->type->type,
+                'startTime' => $startTime,
+                'endTime' => $endTime,
+                'dateNumber' => $dateNumber,
+                'roomPrice' => $room->price
+            );
+        } else {
+            return;
+        }
+        $bookingCart[$room->id] = $bookingRoom;
+        Session::put('hotelId', $room->hotel->id);
+        Session::put('bookingCart', $bookingCart);
+        return redirect('/check-out');
     }
 
 }

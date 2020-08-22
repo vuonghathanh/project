@@ -21,13 +21,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/error', function () {
     return view('error/error-404');
 });
-Route::get('/success',function (){
-   return view('success/order-success');
-});
+Route::get('/success','CheckOutController@paymentPaypal');
+Route::get('/banking-success','CheckOutController@paymentBanking');
+
+
 Route::get('/create-success',function (){
     return view('success/blog-success');
 });
-
 
 //Login-register
 Route::resource('/register','AccountController');
@@ -38,9 +38,11 @@ Route::get('/logout-admin', 'LoginController@logOutAdmin');
 Route::get('/logout-user', 'LoginController@logOutUser');
 
 
+
 //Rote user
 Route::resource('/hotels','ViewBookingHotelController');
 Route::get('/add','ViewBookingHotelController@addCart');
+Route::get('/add-one','ViewBookingHotelController@addOneCart');
 Route::get('/',function (){
     return view('user/home')->with('hotels',\App\Hotel::all());
 });
@@ -94,7 +96,7 @@ Route::middleware(['admin.middleware'])->group(function (){
     Route::post('/room-type-change-status-all','RoomtypeController@updateAllStatus');
     Route::post('/account-change-status-all','AdminCreateAccount@updateAllStatus');
 
-    Route::get('/admin/paypal-return','PayPalController@list');
+    Route::get('/admin', 'ChartController@index');
 });
 
 

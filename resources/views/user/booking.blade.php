@@ -90,7 +90,7 @@
                                     <h6>Lịch thanh toán</h6>
                                 </div>
                                 <div>
-                                    <p>Không thanh toán vào bay giờ, bạn sẽ trả tiền khi rời khỏi khách sạn.</p>
+                                    <p>Bạn phải thanh toán trước 50%, 50% còn lại sẽ trả sau khi bạn kết thúc kì nghỉ.</p>
                                 </div>
                             </div>
                         </div>
@@ -141,7 +141,7 @@
                                         <div class="content-title">
                                         <span>
                                             <i class="far fa-check-circle"></i>
-                                            Không cần đặt cọc để đảm bảo. Bạn sẽ trả tiền trong thời gian lưu trú.
+                                            Bạn phải thanh toán trước 50%, 50% còn lại sẽ trả sau khi bạn kết thúc kì nghỉ.
                                         </span>
                                         </div>
                                     </div>
@@ -258,7 +258,7 @@
                                     <h6>Lịch thanh toán</h6>
                                 </div>
                                 <div>
-                                    <p>Không thanh toán vào bay giờ, bạn sẽ trả tiền khi rời khỏi khách sạn.</p>
+                                    <p>Bạn phải thanh toán trước 50%, 50% còn lại sẽ trả sau khi bạn kết thúc kì nghỉ.</p>
                                 </div>
                             </div>
                         </div>
@@ -316,7 +316,7 @@
                                             <div class="content-title">
                                             <span>
                                                 <i class="far fa-check-circle"></i>
-                                                Không cần đặt cọc để đảm bảo. Bạn sẽ trả tiền trong thời gian lưu trú.
+                                                Bạn phải thanh toán trước 50%, 50% còn lại sẽ trả sau khi bạn kết thúc kì nghỉ.
                                             </span>
                                             </div>
                                         </div>
@@ -352,8 +352,12 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group field item col-6">
-                                                    <p class="cf-email">Confirmation email goes to this address</p>
+                                                    <label class="col-form-label col-12 label-align">Số điện thoại<span class="required">*</span></label>
+                                                    <div class="col-12">
+                                                        <input type="text" class="form-control" required name="phone">
+                                                    </div>
                                                 </div>
+
                                             </div>
                                             <div class="col-12">
                                                 <div class="row">
