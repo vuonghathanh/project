@@ -39,7 +39,7 @@
                             <div>
                             <span>
                                 @for($i=0;$i<$hotel->star;$i++)
-                                    <i class="fas fa-star size-color-icon"></i>
+                                    <i class="fa fa-star size-color-icon"></i>
                                 @endfor
                             </span>
                                 <p></p>
@@ -72,7 +72,7 @@
         <div class="container content" id="start">
             <div>
                 <p class="content_while">Tại sao bạn nên đi du lịch Phú Quốc?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+
             </div>
             <div class="row">
                 <div class="col-6 thumbnail">

@@ -12,11 +12,11 @@ class Booking extends Model
 
     public function getStatusStringAttribute(){
         if($this->status == -1){
-            return '<div class="text-info">Không được duyệt</div>';
+            return '<div class="text-info">Đặt phòng thất bại</div>';
         }else if($this->status == 0){
             return '<div class="text-info">Chờ duyệt</div>';
         }else if($this->status == 1){
-            return '<div class="text-success">Đã duyệt</div>';
+            return '<div class="text-success">Đặt phòng thành công</div>';
         }else{
             return 'Không được duyệt';
         }

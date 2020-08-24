@@ -28,9 +28,11 @@
             <div class="col-middle">
                 <div class="text-center text-center" style="color: #00A000">
                     <i class="fas fa-check-circle" style="font-size: 200px"></i>
-                    <h1>Giữ phòng thành công. </h1>
+                    <h1>Giữ phòng thành công trong 3 phút. </h1>
                     <h6>Vui lòng chuyển khoản để nhận phòng.</h6>
                     <h3 style="font-weight: bold;">STK: 108870986338</h3>
+                    <h4>Chủ tài khoản: LuonPhuQuoc</h4>
+                    <h4>Nội dung: Thanh toán đặt phòng với mã đặt phòng là: {{\Illuminate\Support\Facades\Session::get('bookingId')}}</h4>
                     <a href="/">Trở về trang chủ</a>
                 </div>
             </div>

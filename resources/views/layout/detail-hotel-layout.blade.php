@@ -98,20 +98,22 @@
 <nav class="footer">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-3 padding-footer">
+            <div class="col-3" style="padding-left: 100px">
                 <img src="{{asset('image/logo1.png')}}" width="150px" alt="">
                 <span>
+                   <br>
                     <br>
+                    Công ty du lịch: Lượn Lờ Phú Quốc
                     <br>
-                    Limited company: ....
+                    Trụ sở chính: Số 8, Tôn Thất Thuyết, Mỹ Đình, Hà Nội.
                     <br>
-                    Address: Number 8, Ton That Thuyet, My Dinh, Ha Noi.
+                    Mã số kinh doanh: 0129131231
                     <br>
-                    Business code: 0129131231
+                    Đại diện: Supper Star Team
                     <br>
-                    Legal representation: Vuong Ha Thanh
+                    Điện Thoại: 098.777.033
                     <br>
-                    Position: Leader
+                    Email: LuonLoPhuQuoc@gmail.com
                     <br><br>
                     <a href="#"><i class="fab fa-skype" style="font-size: 20px"></i></a>
                     <a href="#"><i class="fab fa-facebook-square" style="font-size: 20px"></i></a>
@@ -234,20 +236,22 @@
     <nav class="footer">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-3 padding-footer">
+                <div class="col-3" style="padding-left: 100px">
                     <img src="{{asset('image/logo1.png')}}" width="150px" alt="">
                     <span>
+                   <br>
                     <br>
+                    Công ty du lịch: Lượn Lờ Phú Quốc
                     <br>
-                    Limited company: ....
+                    Trụ sở chính: Số 8, Tôn Thất Thuyết, Mỹ Đình, Hà Nội.
                     <br>
-                    Address: Number 8, Ton That Thuyet, My Dinh, Ha Noi.
+                    Mã số kinh doanh: 0129131231
                     <br>
-                    Business code: 0129131231
+                    Đại diện: Supper Star Team
                     <br>
-                    Legal representation: Vuong Ha Thanh
+                    Điện Thoại: 098.777.033
                     <br>
-                    Position: Leader
+                    Email: LuonLoPhuQuoc@gmail.com
                     <br><br>
                     <a href="#"><i class="fab fa-skype" style="font-size: 20px"></i></a>
                     <a href="#"><i class="fab fa-facebook-square" style="font-size: 20px"></i></a>

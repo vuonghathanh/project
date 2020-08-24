@@ -5,13 +5,13 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon"  href="{{asset('image/logo2.png')}}">
+    <link rel="shortcut icon" href="{{asset('image/logo2.png')}}">
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
     <script src="{{asset('js/jquery-3.5.1.min.js')}}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="{{asset('js/bootstrap.js')}}"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
           integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
@@ -22,7 +22,15 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/light-box/lightbox.min.css')}}">
     <script type="text/javascript" src="{{asset('js/light-box/lightbox-plus-jquery.min.js')}}"></script>
     <link href="{{asset('vendors/bootstrap-daterangepicker/daterangepicker.css')}}" rel="stylesheet">
+    {{--        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">--}}
+    {{--    <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">--}}
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     @yield('title')
+    <style>
+        .fa {
+            font-family: "Font Awesome 5 Free" !IMPORTANT;
+        }
+    </style>
 </head>
 <body>
 <nav>
@@ -229,7 +237,7 @@
                                     <li class="nav-item"><a href="/q&a">Hỏi & đáp</a></li>
                                     <li class="nav-item"><a href="/policy">Chính sách</a></li>
                                     <li class="nav-item">
-                                       <i class="fas fa-user-circle" data-toggle="dropdown"></i>
+                                        <i class="fas fa-user-circle" data-toggle="dropdown"></i>
                                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dd1">
                                             <a class="dropdown-item" href="/logout-user" style="color: black">Logout</a>
                                         </div>
@@ -241,7 +249,8 @@
                     <div class="nav-header-overlay"></div>
                     <div class="intro-header">
                         <h2>
-                            Discover everything in ...
+                            Nếu muốn có một gì nghỉ dưỡng thú vị hãy chọn
+                            <div class="."></div>
                         </h2>
                         <h1 class="big-content">
                             Phu Quoc Travel
@@ -388,14 +397,14 @@
     {{-- End footer --}}
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
-        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-        (function(){
-            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-            s1.async=true;
-            s1.src='https://embed.tawk.to/5f3fc89e1e7ade5df442d02f/default';
-            s1.charset='UTF-8';
-            s1.setAttribute('crossorigin','*');
-            s0.parentNode.insertBefore(s1,s0);
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5f3fc89e1e7ade5df442d02f/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
         })();
     </script>
     <!--End of Tawk.to Script-->
@@ -409,5 +418,6 @@
 <script src="{{asset('vendors/bootstrap-daterangepicker/daterangepicker.js')}}"></script>
 <script src="{{asset('js/style.js')}}"></script>
 <script src="{{asset('js/daterangepicker/daterangepicker-user.js')}}"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </body>
 </html>

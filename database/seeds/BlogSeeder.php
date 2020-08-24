@@ -20,7 +20,7 @@ class BlogSeeder extends Seeder
         \Illuminate\Support\Facades\DB::table('blogs')->insert([
             [
                 'id'=>1,
-                'title'=>'Về đêm tại Phú Quốc chơi gì, chơi ở đâu?',
+                'title'=>'Hôm nay 25/8/2020 giới trẻ đến phú quốc nên đi đâu',
                 'description'=>'Nếu bạn muốn có một buổi tối thú vị Phú Quốc có thể đáp ứng mọi nhu cầu của bạn như Casino, dạo phố, trải nhiệm một đêm đi câu mực cùng ngư dân,... Nhưng có một địa điểm khá thú vị dành cho các bạn trẻ mà tôi vừa phát hiện ra vào tối hôm trước
                 nơi đó có không gian rộng dãi thoáng đãng với những tiếng sóng vỗ dập dìu và những bài hát nhẹ nhàng giúp ta có một cảm giác thư giản thoải mái sau những ngày tháng đi làm mệt nhọc.',
                 'details'=>'Ốc Sên Beach Bar Phú Quốc là một quán bar cực chất, ghi dấu ấn ngay lập tức với những chiếc ghế lười màu cam nổi bật trên bãi cát trắng mịn màng.|
@@ -34,7 +34,7 @@ class BlogSeeder extends Seeder
                 'updated_at' => Carbon::now()->addDays(0)->format('Y-m-d H:i:s'),
             ],[
                 'id'=>2,
-                'title'=>'Mùa mưa ở Phú Quốc thú vị như thế nào?',
+                'title'=>'Dự báo thời tiết cho biết 25/8/2020 có khả năng sẩy ra mưa vào 8-10 giờ sáng. Nếu mưa có những địa điểm nào thú vị.',
                 'description'=>'Bạn đi du lịch ở đâu thì đi chứ đi du lịch Phú Quốc mà bỏ qua coi thông tin thời tiết thì có khi phí tiền, phí cả chuyến đi, về lại bảo Phú Quốc chán, chẳng có gì đẹp và thú vị.',
                 'details'=>'Bởi vì thời tiết, mùa mưa và nắng ở Phú Quốc sẽ quyết định tới 50% thành công trong chuyến đi của bạn. Chẳng hạn, có lẽ ít ai muốn đi tới một địa điểm tham quan du lịch vào ngày mưa bão lũ cả. Riêng ở Phú Quốc thì vào mùa mưa và bão bạn vẫn có thể đến được, nhưng nếu bạn đặt khách sạn (hoặc resort) nhầm chỗ (vào đúng bên có mưa bão) thì sẽ thực sự lãng phí tiền của. |
                 Tại sao tôi lại viết dở hơi vậy? Bởi vì bạn phải hình dung đặc điểm địa hình của đảo Phú Quốc, một hòn đảo lớn nằm ở cuối cực nam của đất nước, nhưng nó lại được bao bọc bởi mũi đất liền (gọi là biển Tây) kéo dài từ mũi Cà Mau tới Mũi Nai (TP Hà Tiên – Kiên Giang). Vừa nằm ở xa, gần với xích đạo lại được che chắn nên ở Phú Quốc gần như không có mùa Đông, trời không lạnh. Nhưng ở biển Tây thì vào mùa mưa sẽ có rất nhiều đợt gió mùa Tây Nam thổi đưa mây và mưa lớn tới. Mà bạn hình dung, Phú Quốc là một hòn đảo trải dài theo chiều Bắc – Nam (phía trên là Bắc thì phình to ra như phần cuống của trái xoài, còn phía dưới là nam thì thót lại như đít trái xoài). Chạy dọc “trái xoài” là dãy núi Hàm Ninh phân chia đảo Phú Quốc thành hai nửa gồm sườn Đông đảo và sườn Tây đảo. Ở mỗi bên sườn đều có các bãi biển (bãi tắm du lịch) với nhiều tên gọi khác nhau. Nói chung, Phú Quốc có rất nhiều bãi biển du lịch. Tất nhiên, gọi là đảo thì 360 độ đều là biển nhưng chỉ có những khu nào có bãi tắm đẹp + an toàn thì mới được quy hoạch thì khu du lịch + tắm biển. |
@@ -48,7 +48,7 @@ class BlogSeeder extends Seeder
                 'updated_at' => Carbon::now()->addDays(0)->format('Y-m-d H:i:s'),
             ],[
                 'id'=>3,
-                'title'=>'Thời điểm thích hợp để đến Phú Quốc? Và các trải nghiệm nên thử một lần.',
+                'title'=>'Sáng hôm nay 25/8/2020 với thời tiết mắt mẻ trời trong xanh nên đi đâu?',
                 'description'=>'Thuộc vùng khí hậu nhiệt đới gió mùa nên ở Phú Quốc mùa mưa thường kéo dài từ tháng 5-10, mùa khô từ tháng 11 đến tháng 4 năm sau. Mùa khô là thời gian đẹp nhất để du lịch ở Phú Quốc nhưng chi phí khá đắt đỏ. Nếu bạn muốn có chuyến đi tiết kiệm, hãy đến Phú Quốc vào tháng 4-6. Thời điểm này biển chưa động, mưa cũng không nhiều, thời tiết khá dễ chịu. Bãi Sao, bãi Khem vào mùa mưa gợn sóng lăn tăn, nước xanh ngắt cuốn hút du khách.',
                 'details'=>'Nếu đã đến Phú Quốc thì bạn nhất định phải trải nghiệm: Vi vu 4 đảo bằng cano. Chuyến tham quan 4 đảo trên chiếc ca-nô tốc độ sẽ đưa bạn đến những thiên đường biển đảo tuyệt đẹp như Hòn Móng Tay, Hòn Gầm Ghì, Hòn Mây Rút Trong, và Hòn Mây Rút Ngoài.Chắc chắn bạn sẽ phải xiêu lòng trước vẻ đẹp nhẹ nhàng bởi màu nước trong xanh như ngọc bích của Hòn Móng Tay, những rặng san hô đẹp chết người của Hòn Gầm Ghì hay vẻ hoang sơ của Hòn Mây Rút Trong và Hòn Mây Rút Ngoài. |
                 Tham quan Vinpearl Safari, Vinpearl Safari – Phú Quốc là nhà của hơn 3.000 động vật từ 150 loài đến từ khắp nơi trên thế giới. Tại đây, bạn có thể quan sát rất nhiều loài động vật từ khoảng cách gần qua khung cửa kính của chiếc xe điện. Ngoài ra, bạn còn được selfie với các vũ công trong trang phục thổ dân, thưởng thức xiếc thú và chụp hình sống ảo cùng các loài động vật quý hiếm nữa đó. Vui chơi tại VinWonders Phú Quốc. Đến VinWonders bạn sẽ có được những trải nghiệm mới lạ và đầy cuốn hút. Với 6 phân khu, hơn 100 trò chơi hiện đại cùng các chương trình biểu diễn đa phương tiện quy mô lớn, nơi đây chắc chắn là điểm đến không thể bỏ qua cho hội mê xê dịch và trải nghiệm. |
@@ -62,7 +62,7 @@ class BlogSeeder extends Seeder
                 'updated_at' => Carbon::now()->addDays(0)->format('Y-m-d H:i:s'),
             ],[
                 'id'=>4,
-                'title'=>'Tại sao khi ngắm Hoàng Hôn bạn nên lựa chọn ba điểm này',
+                'title'=>'Chiều hôm nay 25/8/2020 những địa điểm nào có thể ngắm hoàng hôn đẹp?',
                 'description'=>'Phú Quốc không chỉ nổi tiếng bởi vẻ đẹp hoang sơ, quyến rũ với những bãi cát dài trắng mịn, biển xanh như ngọc mà còn là một những nơi ngắm hoàng hôn đẹp nhất Việt Nam. Hãy cùng Lượn Phú Quốc khám phá những địa điểm ngắm hoàng hôn ở Phú Quốc cực chất này nhé!',
                 'details'=>'Đầu tiên phải kể đến nơi được nhiều bạn trẻ lựa chọn check in nhất hiện nay: Sunset Sanato Beach Club – Không còn lạ lẫm với du khách đến Phú Quốc du lịch nhờ được nhiều travel blogger giới thiệu. Đây là khu tổ hợp công trình nghệ thuật được các nghệ nhân tạo nên như mặt người cắt (Cổng trời – The gate keeper), đàn voi trên biển, đàn cá, hình nón lá, căng nhà gỗ trên cây, nấc thang lên thiên đường,… với kích thước khổng lồ choáng ngợp, đặt ngay trên bãi cát và bờ biển, trở thành một trong những điểm check-in ấn tượng nhất Phú Quốc hút dân mê du lịch. Từ đây du khách có thể thuận tiện ngắm nhìn hoàng hôn ở Phú Quốc cực đẹp. Địa chỉ: Bãi Trường Phú Quốc – Tổ 3, ấp Đường Bào, xã Dương Tơ, Phú Quốc. Chỉ dẫn đường đi đến Sunset Sanato Beach Club: Vị trí của Sunset Sanato Beach Club Phú Quốc nằm tại khu Bãi Trường, ấp Đường Bào, xã Dương Tơ, Phú Quốc. Điểm dễ nhận biết nhất là các bạn chạy đến khu vực Bãi Trường, nhìn thấy biển Sunset Sanato Resort & Villa thì rẽ vô, cứ chạy vào khu resort là sẽ thấy khu quán bar bãi biển. Đó chính là Sunset Sanato Beach Club Phú Quốc. Từ Dương Đông nếu bạn muốn đến Sunset Sanato Beach Club Phú Quốc thì cứ chạy theo đường Trần Hưng Đạo về hướng Nam (hướng ra sân bay) khoảng 15km sẽ tới. |
                 Tiếp theo là Chuồn Chuồn Bistro & Sky Bar – với view núi có vị trí khá đẹp nên bạn có thể ngắm hoàng hôn ở Phú Quốc lúc chiều tà hoặc ngắm toàn cảnh thị trấn Dương Đông vào ban đêm. Đặc biệt của quán bar được bao quanh bởi một cây to cho bóng mát, thiết kế chú trọng mảng xanh, chiếm trọn cảm tình của người yêu thiên nhiên nên vừa chụp ảnh sống ảo vừa làm bóng che mát khiến cho không gian quán thật trong lành. Địa chỉ: Đồi Sao Mai, 69 Trần Hưng Đạo, Dương Đông, Phú Quốc. Chỉ dẫn đường đi đến Chuồn Chuồn Bistro & Sky Bar Phú Quốc: Nếu đi bằng taxi, bạn chỉ cần nói với tài xế tên “Nhà hàng Chuồn Chuồn”. Nếu tự đi, có một con đường nhỏ dẫn lên đồi nằm đối diện Saigon Phú Quốc resort ở 62 Trần Hưng Đạo, bạn chỉ cần đi theo con đường đó, rẽ phải ở ngã đầu tiên, sau đó đi thẳng sẽ gặp Chuồn Chuồn Bistro bên trái. |
@@ -74,7 +74,7 @@ class BlogSeeder extends Seeder
                 'updated_at' => Carbon::now()->addDays(0)->format('Y-m-d H:i:s'),
             ],[
                 'id'=>5,
-                'title'=>'Đón Bình Minh tại nơi đây có điều gì thú vị?',
+                'title'=>'Ngày 25/8/2020 Phú Quốc có bình minh không? Và nên ngắm bình minh ở đâu',
                 'description'=>'Phú Quốc là một hòn đảo được thiên nhiên ưu đãi với rất nhiều bãi biển trong, sạch và tuyệt đẹp!!! Và tất nhiên, ngắm bình minh trên những bãi biển trải dài, cùng với làn nước trong mát là một trong những trải nghiệm quá tuyệt vời bạn nên thử ở Phú Quốc. Dưới đây, mình xin chia sẻ với các bạn về 3 địa điểm ngắm bình minh trên biển đẹp bậc nhất ở Phú Quốc.',
                 'details'=>'Phú Quốc, hòn đảo Ngọc của du lịch Việt Nam, từ lâu đã thu hút du khách không chỉ bởi vẻ đẹp hoang sơ của những hòn đảo chưa được khám phá, những bãi biển xinh đẹp với lớp cát trắng mịn níu chân người, những hàng dừa nghiêng mình che bóng mát mà còn bởi những hoạt động khám phá trải nghiệm thú vị trên hòn đảo này. Trong số đó, ngắm bình minh trên những bãi biển kéo dài, tận hưởng những tia nắng ấm áp đầu tiên trong ngày cùng với làn nước trong mát là một trong những trải nghiệm tuyệt vời mà bạn nên thử khi du lịch Phú Quốc. SUNSET SANATO PHÚ QUỐC. Vị trí của Sunset Sanato Beach Club Phú Quốc nằm tại khu Bãi Trường, ấp Đường Bào, xã Dương Tơ, Phú Quốc. Điểm dễ nhận biết nhất là các bạn chạy đến khu vực Bãi Trường, nhìn thấy biển Sunset Sanato Resort & Villa thì rẽ vô, cứ chạy vào khu resort là sẽ thấy khu quán bar bãi biển. Đó chính là Sunset Sanato Beach Club Phú Quốc. |
                  LÀNG CHÀI HÀM NINH PHÚ QUỐC, Đây là địa điểm được yêu thích nhất, cũng như theo đánh giá là địa điểm ngắm bình minh đẹp nhất ở Phú Quốc. Điểm tạo nên điểm nhấn cho cảnh bình minh ở đây là con đường dài tầm 200m, chạy dọc ra biển. Đây là con đường được người dân dùng để di chuyển ra khu tàu, thuyền đánh bắt cá cập bến. Và chính con đường này tô điểm cho cảnh bình minh trên biển ở làng chài này trở nên “vi diệu” hơn.Hãy chịu khó dậy sớm một chút, tầm khoảng 5h là đẹp, di chuyển ra làng chài Hàm Ninh để săn những bức ảnh cực đẹp, cũng như lưu giữ lại một kỉ niệm đáng nhớ tại mảnh đất xứ “đảo ngọc”. |
@@ -86,7 +86,7 @@ class BlogSeeder extends Seeder
                 'updated_at' => Carbon::now()->addDays(0)->format('Y-m-d H:i:s'),
             ],[
                 'id'=>6,
-                'title'=>'Khám phá rừng nguyên sinh-sông Cửa Cạn với thuyền Kayak có điều gì thú vị?',
+                'title'=>'Thời tiết ngày 25/8/2020 là một điều kiện tuyệt vời để mọi người có thể khám phá những khu rừng. ',
                 'description'=>'Sáng du khách tự túc dùng điểm tâm sáng, 8h00 xe của công ty sẽ đến khách sạn để đón du khách lại điểm tập trung. Khởi hành tham quan Bắc đảo lúc, trên đường đi du khách ghé tham quan cơ sở sản xuất Nước mắm với truyền thống lâu đời và nổi tiếng. Vườn tiêu xanh – đặc sản xứ đảo.',
                 'details'=>'Du khách tiếp tục tham quan Rừng nguyên sinh (vườn quốc gia Phú Quốc) tận mắt nhìn thấy hệ sinh thái rừng độc đáo nơi đất đảo.|
                   Du khách đi đến điểm cực bắc của đảo Phú Quốc là Gành Dầu ngắm hải giới Campuchia.|
@@ -99,7 +99,7 @@ class BlogSeeder extends Seeder
                 'updated_at' => Carbon::now()->addDays(0)->format('Y-m-d H:i:s'),
             ],[
                 'id'=>7,
-                'title'=>'Đua nhau sống ảo với cổng trời bí mật đang hot rần rần ở Phú Quốc',
+                'title'=>'Với dự báo có mưa vào buổi sáng có nên chụp ảnh tại Cổng trời không?',
                 'description'=>'Từ nay, không cần phải sang tận Indonesia mà ngay Việt Nam mình cũng có một cổng trời bí mật, đẹp ngất ngây luôn nè. Chụp hình ở đây rồi check – in ở nước ngoài thì bạn bè cũng tin ngay luôn đó. ',
                 'details'=>'Cổng trời bí mật đang hot rần rần hội mê du lịch Phú Quốc.Cổng trời bí mật này nằm trong khuôn viên của Sunset Sonato Beach Club – một điểm đến vô cùng quen thuộc với những tín đồ mê du lịch Phú Quốc từ cuối năm 2017.|
                  Với thiết kế độc đáo hình mặt người cắt đôi, được dựng bên bờ biển, đứng đây bạn không những có hình đẹp sống ảo mà đây còn là nơi ngắm hoàng hôn vô cùng lãng mạn đấy.|
@@ -112,7 +112,7 @@ class BlogSeeder extends Seeder
                 'updated_at' => Carbon::now()->addDays(0)->format('Y-m-d H:i:s'),
             ],[
                 'id'=>8,
-                'title'=>'Trải nghiệm một ngày với làng chài ở Phú Quốc?',
+                'title'=>'Hôm nay 25/8/2020 là một ngày tuyệt vời để trải nghiệm thử một ngày làm ngư dân tại phú quốc.',
                 'description'=>'Đa số du khách khi đến với Phú Quốc chỉ biết đến làng chài Hàm Ninh nổi tiếng mà vô tình bỏ qua những làng chài khác cũng bình yên và xinh đẹp không kém. Từ những cái tên quen thuộc như Cửa Cạn, Gành Dầu đến lạ lẫm như Rạch Tràm, Rạch Vẹm, những làng chài ở Phú Quốc luôn tạo cho du khách từng đặt chân đến một cảm giác thân thuộc khó tả.',
                 'details'=>'1. Làng chài Hàm Ninh: Làng chài Hàm Ninh nằm trên bờ biển phía Ðông đảo, sau lưng là núi rừng, trước mặt là biển cả mênh mông. Biển Hàm Ninh ra xa vài trăm thước mà vẫn còn cạn. Khi nước ròng, bãi cát mênh mông chạy tít ra xa, lúc nước lên, tràn ngập bãi, vào tận mé rừng. Ấn tượng đầu tiên khi đến mảnh đất này là bạn sẽ được chiêm ngưỡng ngọn núi Hàm Ninh cao 300m. Đá chồng đá, dựng đứng rêu phong tạo nên một vùng mây khói hòa giữa màu xanh của núi rừng và biển trời mênh mông Phú Quốc. Chiều về trên bãi Hàm Ninh, bạn có thể ngắm biển xanh, phía xa xa là quần đảo Hải Tặc, hòn Nghệ thấp thoáng trong làn nước biển. Nếu một lần đến đây bạn đừng quên chọn mua những con ghẹ Hàm Ninh nổi tiếng chắc thịt còn tươi rói, đem hấp chấm muối tiêu vừa thưởng thức vừa ngắm biển Hàm Ninh đẹp rực rỡ nắng vàng. |
                 2. Làng chài Cửa Cạn: Nằm ở phía Bắc và cách thị trấn Dương Đông khoảng 14 km, cách bãi Ông Lang một vài km là làng chài Cửa Cạn. Tại đây có rất nhiều những cây cầu gỗ chỉ cho phép người đi bộ và xe máy chạy qua. Tuy làng chài khá nhỏ nhưng nó vẫn có một số địa điểm cung cấp thức uống và thư giãn bên đường trước khi đi tới những bãi biển vắng vẻ phía Bắc đảo. Cuối phía Nam của làng cũng có một trạm xăng. Nếu bạn muốn tìm thêm sự phiêu lưu mạo hiểm hãy thử thuyết phục một chủ tàu bản địa mang theo bạn ra sông Cửa Cạn. Đó là một trong những cách tuyệt vời để tìm hiểu khung cảnh sinh hoạt hàng ngày của cư dân ven sông hay ngắm những con tàu lớn đánh bắt cá trở về sau những chuyến ra khơi nhiều ngày. Tại làng Cửa Cạn cũng có một cồn cát xinh đẹp nhưng bị cô lập ở phía Bắc ngôi làng, bạn có thể nhìn thấy nó từ con đường ven biển đi về phía Bắc đến Gành Dầu và bãi Dài. |
@@ -126,7 +126,7 @@ class BlogSeeder extends Seeder
                 'updated_at' => Carbon::now()->addDays(0)->format('Y-m-d H:i:s'),
             ],[
                 'id'=>9,
-                'title'=>'Hôm nay ăn gì ở Phú Quốc?',
+                'title'=>'Với thời tiết hôm nay nên đi ăn gì tại Phú Quốc?',
                 'description'=>'Đến với Phú Quốc nơi hòn đảo xinh đẹp, thích hợp cho nghỉ dưỡng thư thái nhất. Đi đôi với du lịch luôn là ẩm thực, vậy nên có những quán ăn vặt Phú Quốc nào ngon, ấn tượng cũng được đa phần các du khách quan tâm. Ăn vặt gì ngon tại Phú Quốc là chủ đề được quan tâm. Tuy đa dạng về quán ăn vặt ngon để phục vụ khách du lịch nhưng ấn tượng và đặc sắc thì không phải tất cả. Trong bài viết dưới đây, chúng tôi sẽ giới thiệu cho các bạn top đầu các quán ăn vặt Phú Quốc thú vị và nổi tiếng.',
                 'details'=>'1.Bánh canh chả cá Phụng: Tại Phú Quốc có rất nhiều các cửa hàng bán bánh cá đa dạng và phong phú như bánh canh chả cá, bánh canh thịt lợn, vậy nhưng nổi tiếng nhất vẫn là quán bánh canh chả cá Phụng. Quán Phụng nằm gần Dinh Cậu, thị trấn Dương Đông, đã có tuổi đời từ rất lâu.Điều tạo nên sự đặc biệt cho bánh canh tại đây đó là chủ quán chỉ sử dụng cá thu tươi ngon do ngư dân đảo đánh bắt được vào sáng sớm. Bên cạnh cá thu được nấu tươi, quán còn bán cả cá thu chiên, tất cả đều được xếp vào một tô để thưởng thức. |
                 2.Hủ tiếu hải sản Quốc Anh : Đến với Phú Quốc không thể không thử món hủ tiếu hải sản vang danh này. Muốn chuẩn vị nhất, phải đến quán Quốc Anh ở 74 Bạch Đằng, khu 1, thị trấn Dương Đông. Nước dùng được quán chế biến rất ngon, ăn vừa miệng.Hải sản của quán được chọn lọc kỹ càng nên vừa có vị ngọt, lại rất tươi, ăn nhiều mà không ngán. Quán Quốc Anh là một quán ăn vặt Phú Quốc đêm mở cửa đến tận 11h đêm và phục vụ rất nhanh chóng.|
@@ -143,7 +143,7 @@ class BlogSeeder extends Seeder
                 'updated_at' => Carbon::now()->addDays(0)->format('Y-m-d H:i:s'),
             ],[
                 'id'=>10,
-                'title'=>'Hy Lạp cổ thu nhỏ có điều gì đặc biệt?',
+                'title'=>'Có nên đi đến khu du lịch Hy Lạp cổ thu nhỏ vào hôm nay?',
                 'description'=>'Ga cáp treo Hòn Thơm còn được gọi với cái tên khác là Nhà Ga An Thới, điểm xuất phát để đi cáp treo đến Hon Thom Nauture Park . Được mệnh danh là “Đấu trường La Mã” của Việt Nam, Ga An Thới gây ấn tượng với du khách bởi kiến trúc mang hơi thở “Địa Trung Hải” độc đáo. Ga An thới hứa hẹn là điểm check in cực “chất” cho du khách khi đi du lịch Phú Quốc..',
                 'details'=>'Vị trí trong khu vui chơi giải trí  Sun World Hon Thom Nature Park, có một Hy Lạp thu nhỏ giữa lòng Phú Quốc này thực chất là ga An Thới .|
                  Tại đây không chỉ là một nhà ga thông thường mà đã biến hóa thành những công trình La-Mã cổ đại.Kiến trúc cổ kính, độc đáo và vô cùng hoành tráng chính là một số mỹ từ khi nhắc đến vẻ đẹp của nhà ga An Thới Phú Quốc. Nếu không tận mắt chứng kiến, bạn cũng không thể ngờ rằng ở Việt Nam lại xuất hiện một thiên đường Lã Mã lộng lẫy, cổ xưa và đẹp rụng rời đến thế. Chỉ cần đến đây là bạn có ngay hàng tá ảnh đẹp, sống ảo cực chất trên mạng xã hội.|

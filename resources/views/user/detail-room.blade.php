@@ -7,9 +7,15 @@
         <div class="container" style="max-width: 1000px">
             <div class="row">
                 <div class="col-7">
-                    <h1 class="name-hotel">
+                    <span style="font-weight: bold;font-size: 30px;">
+                        Loại phòng:
+                        <span class="name-hotel">
+                              {{$room->type->type}}
+                        </span>
+                    </span>
+                    <h3>
                         {{$room->hotel->name}}
-                    </h1>
+                    </h3>
                     <h5>
                         {{$room->hotel->address}}
                     </h5>

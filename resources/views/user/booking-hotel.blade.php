@@ -58,7 +58,7 @@
                                             </a>
                                         </div>
                                         <div class="col-8 box-content">
-                                            <a href="#"><h2 class="content-align">{{$hotel->name}}</h2></a>
+                                            <a href="/hotels/{{$hotel->id}}"><h2 class="content-align">{{$hotel->name}}</h2></a>
                                             <p class="content-align">
                                                 <a href="#">{{$hotel->address}}</a>
                                                 <span class="star-sp">

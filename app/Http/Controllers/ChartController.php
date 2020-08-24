@@ -29,6 +29,7 @@ class ChartController extends Controller
         }
 
         $pluckBooking = $booking->where('status','=',1)
+            ->orderByRaw('created_at')
             ->pluck('created_at','total_price');
         $chart = new ChartBooking();
         foreach ($pluckBooking->keys() as $price){

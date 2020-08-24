@@ -68,8 +68,8 @@
                         {!! $chart->container() !!}
                         <div style="padding-top: 100px">
                         <span>
-                            <h3>Tổng doanh thu: {{\App\Utility::formatMoney($total_price)}}</h3>
-                            <h4>Doanh thu được nhận: {{\App\Utility::formatMoney($total_price * 0.1)}}</h4>
+                            <h3>Doanh thu được nhận: {{\App\Utility::formatMoney($total_price * 0.1)}}</h3>
+                            <h4>Tổng doanh thu: {{\App\Utility::formatMoney($total_price)}}</h4>
                         </span>
                         </div>
                     </div>

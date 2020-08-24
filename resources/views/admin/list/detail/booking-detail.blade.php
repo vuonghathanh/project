@@ -34,7 +34,7 @@
                                     @foreach($list as $obj)
                                         <tr>
                                             <td>{{$obj->id}}</td>
-                                            <td>{{$obj->price}}</td>
+                                            <td>{{\App\Utility::formatMoney($obj->price)}}</td>
                                             <td>{{$obj->date_number}}</td>
                                             <td>{{$obj->start_with}}</td>
                                             <td>{{$obj->end_with}}</td>
