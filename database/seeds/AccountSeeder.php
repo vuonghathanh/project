@@ -109,5 +109,6 @@ class AccountSeeder extends Seeder
                 'updated_at' => \Carbon\Carbon::now()->addDays(0)->format('Y-m-d H:i:s'),
             ],
         ]);
+        \Illuminate\Support\Facades\DB::statement('ALTER SEQUENCE accounts_id_seq RESTART WITH 7');
     }
 }

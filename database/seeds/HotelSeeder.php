@@ -215,5 +215,6 @@ class HotelSeeder extends Seeder
         if (env('DB_CONNECTION') == 'mysql') {
             \Illuminate\Support\Facades\DB::statement('SET FOREIGN_KEY_CHECKS = 1');
         }
+        \Illuminate\Support\Facades\DB::statement('ALTER SEQUENCE hotels_id_seq RESTART WITH 11');
     }
 }

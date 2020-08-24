@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 
 
-
+Route::post('/paypal','PayPalController@checkPaypal');
 //success & error
 Route::get('/error', function () {
     return view('error/error-404');
