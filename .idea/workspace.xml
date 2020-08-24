@@ -2,32 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1134f102-381c-487d-bbc9-836e106237b3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project-laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project-laravel.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CheckOutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CheckOutController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ViewBookingHotelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ViewBookingHotelController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/mail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/BlogSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/BlogSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/BookingSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/BookingSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/blog.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/blog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ChartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ChartController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/chart-js.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/chart-js.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/detail-hotel-layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/detail-hotel-layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/user-layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/user-layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/blog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/blog.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/booking-hotel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/booking-hotel.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/booking.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/booking.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/detail-room.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/detail-room.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/payment.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/payment.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +172,9 @@
       <updated>1598004221008</updated>
       <workItem from="1598004222915" duration="11698000" />
       <workItem from="1598025827224" duration="3741000" />
-      <workItem from="1598057822599" duration="3780000" />
+      <workItem from="1598057822599" duration="16013000" />
+      <workItem from="1598244746569" duration="42000" />
+      <workItem from="1598246841423" duration="2465000" />
     </task>
     <servers />
   </component>

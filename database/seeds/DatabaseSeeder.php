@@ -13,8 +13,8 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(AccountSeeder::class);
         $this->call(HotelSeeder::class);
-        $this->call(RoomsSeeder::class);
         $this->call(RoomTypeSeeder::class);
+        $this->call(RoomsSeeder::class);
         $this->call(BookingSeeder::class);
         $this->call(BookingDetailSeeder::class);
         $this->call(BlogSeeder::class);
