@@ -44,7 +44,7 @@ class CheckOutController extends Controller
         }
         $booking = new Booking();
         $booking->total_price = $request->get('total_price');
-        $booking->payment_type = 'paypal';
+        $booking->payment_type = ' ';
         $booking->status = 0;
         $booking->account_id = 1;
         $booking->first_name = $request->get('first_name');
