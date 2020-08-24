@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1134f102-381c-487d-bbc9-836e106237b3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/AccountSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/AccountSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/BlogSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/BlogSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/BookingDetailSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/BookingDetailSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/BookingSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/BookingSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/HotelSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/HotelSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/RoomTypeSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/RoomTypeSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/RoomsSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/RoomsSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +172,7 @@
       <workItem from="1598244746569" duration="42000" />
       <workItem from="1598246841423" duration="4330000" />
       <workItem from="1598253894960" duration="691000" />
-      <workItem from="1598262756234" duration="10473000" />
+      <workItem from="1598262756234" duration="11115000" />
     </task>
     <servers />
   </component>
